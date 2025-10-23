@@ -1,5 +1,7 @@
 {
-    "about":{
-        "hello":"Hola"
+    "navbar":{
+        "logo-description": "Logo de marca personal",
+        "close-menu": "Cerrar menú",
+        "open-menu": "Abrir menú"
     }
 }
