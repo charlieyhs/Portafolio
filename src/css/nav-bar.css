@@ -4,42 +4,56 @@
 }
 
 /* ===== NAVBAR BASE ===== */
-nav {
+header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  padding: 25px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
   background: rgba(250, 250, 250, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #e0e0e0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ===== LOGO ===== */
 .logo img {
-  width: 20%;
-  max-width: 450px;
+  width: 140px;
   height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 /* ===== MENÚ PRINCIPAL (DESKTOP) ===== */
 .nav-menu {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
 .nav-item {
+  background: none;
+  border: none;
   color: var(--gray);
-  text-decoration: none;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
+  cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
+  padding: 5px;
 }
 
 .nav-item:hover {
@@ -69,7 +83,7 @@ nav {
   cursor: pointer;
   font-size: 1.8rem;
   color: var(--gray);
-  display: none; /* oculto en desktop */
+  display: none; /* Oculto en desktop */
   transition: transform 0.2s ease, color 0.3s ease;
 }
 
@@ -79,7 +93,9 @@ nav {
   transform: scale(1.1);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+.nav-menu li {
+  list-style: none;
+}
 
 /* Tablets */
 @media (max-width: 1024px) {
@@ -96,50 +112,36 @@ nav {
   }
 
   .logo img {
-    width: 30%;
-    max-width: 300px;
+    width: 120px;
   }
 }
 
 /* Móviles */
 @media (max-width: 768px) {
-  nav {
-    padding: 15px 25px;
-  }
-
-  .logo img {
-    width: 40%;
-    max-width: 200px;
-  }
-
-  /* Botón hamburguesa visible */
   .menu-toggle {
     display: block;
   }
 
-  /* Menú desplegable oculto */
   .nav-menu {
     display: none;
     position: absolute;
-    top: 70px; /* debajo del nav */
+    top: 70px;
     right: 25px;
     flex-direction: column;
     background: rgba(250, 250, 250, 0.98);
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px 25px;
+    padding: 20px;
     gap: 20px;
     z-index: 99;
     animation: slideDown 0.3s ease forwards;
   }
 
-  /* Menú desplegado */
   .nav-menu.open {
     display: flex;
   }
 
-  /* Animación de aparición */
   @keyframes slideDown {
     from {
       opacity: 0;
@@ -151,9 +153,13 @@ nav {
     }
   }
 
-  /* Enlaces dentro del menú móvil */
   .nav-item {
     font-size: 16px;
     text-align: right;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 100px;
   }
 }

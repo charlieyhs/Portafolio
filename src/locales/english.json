@@ -1,5 +1,16 @@
 {
-    "about":{
-        "hello":"hello"
-    }
+  "navbar": {
+    "logo-description": "Personal brand logo",
+    "close-menu": "Close menu",
+    "open-menu": "Open menu",
+    "projects": "PROJECTS",
+    "experience": "EXPERIENCE",
+    "skills": "SKILLS",
+    "contact": "CONTACT"
+  },
+  "language-selector": {
+    "language": "LANGUAGE",
+    "spanish": "Spanish",
+    "english": "English"
+  }
 }

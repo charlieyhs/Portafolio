@@ -2,47 +2,66 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { logo } from '../assets/images';
 import '../css/nav-bar.css';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const menus = [
+    { id: '1', label: t('navbar.projects'), href: 'projects' },
+    { id: '2', label: t('navbar.experience'), href: 'experience' },
+    { id: '3', label: t('navbar.skills'), href: 'skills' },
+    { id: '4', label: t('navbar.contact'), href: 'contact' },
+  ];
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header>
       <nav>
         <div className="logo">
-          <a href="#inicio">
+          <button style={{background: 'transparent', border: 'none'}}
+            onClick={() => { handleScroll('hero'); setMenuOpen(false); }}>
             <img
               src={logo}
               alt={t('navbar.logo-description')}
               title={t('navbar.logo-description')}
             />
-          </a>
+          </button>
         </div>
 
+        {/* Botón hamburguesa */}
         <button
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? t('navbar.close-menu') : 'navbar.open-menu'}
+          aria-label={menuOpen ? t('navbar.close-menu') : t('navbar.open-menu')}
         >
           {menuOpen ? '✕' : '☰'}
         </button>
 
         {/* Menú principal */}
-        <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
-          <a href="#proyectos" className="nav-item" onClick={() => setMenuOpen(false)}>
-            PROYECTOS
-          </a>
-          <a href="#experiencia" className="nav-item" onClick={() => setMenuOpen(false)}>
-            EXPERIENCIA
-          </a>
-          <a href="#skills" className="nav-item" onClick={() => setMenuOpen(false)}>
-            SKILLS
-          </a>
-          <a href="#contacto" className="nav-item" onClick={() => setMenuOpen(false)}>
-            CONTACTO
-          </a>
-        </div>
+        <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
+          {menus.map((menu) => (
+            <li key={menu.id}>
+              <button
+                className="nav-item"
+                onClick={() => {
+                  handleScroll(menu.href);
+                  setMenuOpen(false);
+                }}
+              >
+                {menu.label}
+              </button>
+            </li>
+          ))}
+          <LanguageSelector />
+        </ul>
       </nav>
     </header>
   );

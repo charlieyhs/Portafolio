@@ -11,3 +11,7 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
 }
+
+section {
+  scroll-margin-top: 125px;
+}

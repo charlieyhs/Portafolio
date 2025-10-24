@@ -2,6 +2,15 @@
     "navbar":{
         "logo-description": "Logo de marca personal",
         "close-menu": "Cerrar menú",
-        "open-menu": "Abrir menú"
+        "open-menu": "Abrir menú",
+        "projects": "PROYECTOS",
+        "experience": "EXPERIENCIA",
+        "skills": "CONOCIMIENTOS",
+        "contact": "CONTACTO"
+    },
+    "language-selector": {
+        "language": "IDIOMA",
+        "spanish": "Español",
+        "english": "Ingles"
     }
 }
