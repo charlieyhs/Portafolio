@@ -13,7 +13,7 @@ const Portfolio = () => {
             <Navbar />
             <main>
                 <HeroSection/>
-                <section id="projects"><ProjectsSection/> </section>
+                <ProjectsSection/>
                 <section id="experience"><ExperienceSection/></section>
                 <section id="skills"><SkillsSection/></section>
                 <section id="contact"><ContactSection/></section>

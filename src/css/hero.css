@@ -1,3 +1,6 @@
+:root{
+    --gray: #5C6B73;
+}
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
@@ -51,7 +54,7 @@
 
 .hero-subtitle {
     font-size: clamp(16px, 2vw, 18px);
-    color: #5C6B73;
+    color: var(--gray);
     max-width: 540px;
     line-height: 1.7;
     font-weight: 400;
@@ -143,13 +146,13 @@
 .cta-secondary {
     background: transparent;
     border: 2px solid #A3B18A;
-    color: #5C6B73;
+    color: var(--gray);
 }
 
 .cta-secondary:hover {
-    background: #5C6B73;
+    background: var(--gray);
     color: #FAFAFA;
-    border-color: #5C6B73;
+    border-color: var(--gray);
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(92, 107, 115, 0.2);
 }
