@@ -22,6 +22,16 @@
     "contact": "Contact",
     "aria-label-contact": "Go to the contact section",
     "role": "Full Stack Developer"
+  },
+  "projects": {
+    "view-project": "View project →",
+    "featured-work": "Featured Work",
+    "selected-projects": "Selected Projects",
+    "gym": "Gym",
+    "gym-description": "Gym Fitness Web is a frontend application built with React that provides a modern, dynamic, and motivational experience for a gym. It features interactive sections such as plans, classes, trainers, and a blog, with a minimalist, professional, and responsive design that reflects the fitness lifestyle.",
+    "savingsfund": "Savings Fund",
+    "savingsfund-description": "The <strong>Savings Fund - Management System</strong> is a web application designed to manage a <strong>community savings fund</strong>, facilitating the control of contributions, loans, investments, and member information. It offers an overview of the fund’s status and tools to efficiently manage financial resources and transactions.",
+    "moto-viewer": "Moto 360°",
+    "moto-viewer-description": "The <strong>Interactive 360° Viewer</strong> is a web application that allows users to view objects from every angle through preloaded images. It provides a smooth and intuitive experience with rotation, zoom, and navigation controls for both PC and mobile devices, combining modern design and high visual performance."
   }
-
 }

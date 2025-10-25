@@ -9,7 +9,9 @@ const ProjectCard = ({project}) => {
         <div className="project-card">
             <div className="project-number">{project.id}</div>
             <h3 className="project-title">{t(project.name)}</h3>
-            <p className="project-description">{t(project.description)}</p>
+            <p className="project-description"
+                dangerouslySetInnerHTML={{ __html: t(project.description) }}>
+            </p>
             <div className="project-tech">
                 {project.skills.map(skill => (
                     <ProjectBadge key={skill.id} name={skill.name} />

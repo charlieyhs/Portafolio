@@ -28,6 +28,10 @@
         "featured-work" : "Trabajo destacado",
         "selected-projects" : "Proyectos seleccionados",
         "gym" : "Gimnasio",
-        "gym-description": "Gym Fitness Web es una aplicación frontend desarrollada con React que ofrece una experiencia moderna, dinámica y motivacional para un gimnasio. Presenta secciones interactivas como planes, clases, entrenadores y blog, con un diseño minimalista, profesional y responsivo que refleja el estilo de vida fitness."
+        "gym-description": "Gym Fitness Web es una aplicación frontend desarrollada con React que ofrece una experiencia moderna, dinámica y motivacional para un gimnasio. Presenta secciones interactivas como planes, clases, entrenadores y blog, con un diseño minimalista, profesional y responsivo que refleja el estilo de vida fitness.",
+        "savingsfund": "Fondo de ahorro",
+        "savingsfund-description": "El <strong>Fondo de Ahorro - Sistema de Gestión</strong> es una aplicación web que permite administrar un <strong>fondo de ahorro comunitario</strong>, facilitando el control de aportaciones, préstamos, inversiones y la información de los miembros. Ofrece una vista general del estado del fondo y herramientas para gestionar de forma organizada los recursos y movimientos financieros.",
+        "moto-viewer": "Moto 360°",
+        "moto-viewer-description" : "El <strong>Visor 360° Interactivo</strong> es una aplicación web que permite visualizar objetos desde todos los ángulos mediante imágenes precargadas. Ofrece una experiencia fluida e intuitiva con controles para rotación, zoom y navegación tanto en PC como en dispositivos móviles, combinando diseño moderno y alto rendimiento visual."
     }
 }
