@@ -78,14 +78,14 @@ const LanguageSelector = () => {
       </button>
 
       {menuOpen && (
-        <ul className="language-menu" role="menu">
+        <ul className="language-menu">
           {languages.map((lang) => (
-            <li key={lang.code} role="none">
+            <li key={lang.code}>
               <button
                 type="button"
                 onClick={() => handleChangeLanguage(lang.code)}
                 className={`menu-item ${i18n.language === lang.code ? "selected" : ""}`}
-                role="menuitem">
+                >
                   <img src={lang.flag} alt={lang.name} className="flag-option" />
                   <span className="lang-option-name">{lang.name}</span>
                   {i18n.language === lang.code && (
