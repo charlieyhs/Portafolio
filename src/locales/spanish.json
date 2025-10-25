@@ -1,5 +1,5 @@
 {
-    "navbar":{
+    "navbar": {
         "logo-description": "Logo de marca personal",
         "close-menu": "Cerrar menú",
         "open-menu": "Abrir menú",
@@ -12,5 +12,15 @@
         "language": "IDIOMA",
         "spanish": "Español",
         "english": "Ingles"
+    },
+    "hero": {
+        "description-avatar" : "Imagen de avatar de Carlos Hernández",
+        "name" : "Carlos Hernández",
+        "self-description" : "Desarrollador de software con más de 3 años de experiencia en el diseño e implementación de soluciones tecnológicas eficientes y escalables, enfocado en resolver problemas complejos y mejorar la experiencia del usuario.",
+        "view-projects" : "Ver proyectos",
+        "aria-label-projects": "Ver mis proyectos destacados",
+        "contact" : "Contactar",
+        "aria-label-contact": "Ir a la sección de contacto",
+        "role": "Desarrollador Full Stack"
     }
 }

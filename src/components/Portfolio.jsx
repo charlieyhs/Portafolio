@@ -12,7 +12,7 @@ const Portfolio = () => {
         <>
             <Navbar />
             <main>
-                <section id="hero" style={{paddingTop: '150px'}}><HeroSection/></section>
+                <HeroSection/>
                 <section id="projects"><ProjectsSection/> </section>
                 <section id="experience"><ExperienceSection/></section>
                 <section id="skills"><SkillsSection/></section>

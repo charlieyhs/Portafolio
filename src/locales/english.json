@@ -12,5 +12,16 @@
     "language": "LANGUAGE",
     "spanish": "Spanish",
     "english": "English"
+  },
+  "hero": {
+    "description-avatar": "Avatar image of Carlos Hernández",
+    "name": "Carlos Hernández",
+    "self-description": "Software developer with over 3 years of experience in designing and implementing efficient and scalable technological solutions, focused on solving complex problems and enhancing user experience.",
+    "view-projects": "View projects",
+    "aria-label-projects": "View my featured projects",
+    "contact": "Contact",
+    "aria-label-contact": "Go to the contact section",
+    "role": "Full Stack Developer"
   }
+
 }

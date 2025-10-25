@@ -1,48 +1,60 @@
+import { useTranslation } from "react-i18next";
+import { avatar } from "../../assets/images";
+import '../../css/hero.css'
 
 const HeroSection = () => {
+    const { t } = useTranslation();
+    
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
-        <div>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            <h1>HERO</h1>
-            
-        </div>
+        <section id="hero" className="hero-section" aria-labelledby="hero-title">
+            <div className="hero-content">
+                <div className="hero-text-container">
+                    <h1 id="hero-title" className="hero-title">
+                        <strong className="hero-title-highlight">{t('hero.name')}</strong>
+                    </h1>
+                    <p className="hero-subtitle">
+                        {t('hero.self-description')}
+                    </p>
+                </div>
+                
+                <div className="hero-avatar-container">
+                    <img 
+                        src={avatar} 
+                        alt={t('hero.description-avatar')}
+                        className="hero-avatar"
+                        loading="eager"
+                        width="220"
+                        height="220"
+                    />
+                    <p className="hero-role">{t('hero.role')}</p>
+                </div>
+            </div>
+
+            <div className="hero-cta">
+                <button 
+                    className="cta-btn cta-primary"
+                    onClick={() => handleScroll('projects')}
+                    aria-label={t('hero.aria-label-projects')}
+                >
+                    {t('hero.view-projects')}
+                </button>
+
+                <button 
+                    className="cta-btn cta-secondary"
+                    onClick={() => handleScroll('contact')}
+                    aria-label={t('hero.aria-label-contact')}
+                >
+                    {t('hero.contact')}
+                </button>
+            </div>
+        </section>
     );
 }
 
