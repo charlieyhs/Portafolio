@@ -26,3 +26,13 @@
     color: #333333;
     letter-spacing: -1px;
 }
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: #5C6B73;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-top: 1px solid #E0E0E0;
+    background: #FFFFFF;
+}

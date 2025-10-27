@@ -33,5 +33,41 @@
     "savingsfund-description": "The <strong>Savings Fund - Management System</strong> is a web application designed to manage a <strong>community savings fund</strong>, facilitating the control of contributions, loans, investments, and member information. It offers an overview of the fund’s status and tools to efficiently manage financial resources and transactions.",
     "moto-viewer": "Moto 360°",
     "moto-viewer-description": "The <strong>Interactive 360° Viewer</strong> is a web application that allows users to view objects from every angle through preloaded images. It provides a smooth and intuitive experience with rotation, zoom, and navigation controls for both PC and mobile devices, combining modern design and high visual performance."
+  },
+  "experience": {
+    "professional-experience": "Professional Experience",
+    "experience": "Experience",
+    "job1": {
+      "date": "July 2022 - July 2024",
+      "position": "Junior Developer",
+      "description": "<ul><li>Developed and enhanced enterprise applications using <strong>Java EE</strong> and <strong>PrimeFaces</strong>, focusing on improving <strong>usability</strong> and the <strong>experience of over 200 end users</strong>.</li><li>Designed and built <strong>dynamic web modules</strong> that streamlined interaction with internal systems.</li><li>Implemented <strong>custom reports with JasperReports</strong>, successfully <strong>automating data analysis processes</strong> and <strong>reducing manual work by 30%</strong> for operational teams.</li><li>Contributed to the <strong>migration of services to modern environments</strong>, enhancing system <strong>stability</strong>, <strong>performance</strong>, and <strong>maintainability</strong>, ensuring a smooth transition without disrupting daily operations.</li></ul>"
+    },
+    "job2": {
+      "date": "July 2024 - Present",
+      "position": "Senior Developer",
+      "description": "<ul><li>Designed and implemented <strong>secure RESTful APIs</strong> using <strong>OAuth 2.0</strong>, achieving <strong>efficient integration with external providers</strong> while ensuring data protection.</li><li>Collaborated directly with <strong>clients</strong> in the <strong>definition of requirements</strong>, ensuring solutions were <strong>aligned with their business goals and needs</strong>.</li><li><strong>Led key projects</strong> from the definition phase to final delivery, meeting <strong>100% of established deadlines</strong> and ensuring <strong>client satisfaction</strong>.</li><li>Contributed to the <strong>optimization of the microservices architecture</strong>, achieving a <strong>15% reduction in application response times</strong> and improving overall performance.</li></ul>"
+    }
+  },
+  "skills": {
+    "label": "Technical Skills",
+    "title": "Skills",
+    "skill1": {
+      "alt-icon": "Reference icon for frontend skills",
+      "title": "Frontend"
+    },
+    "skill2": {
+      "alt-icon": "Reference icon for backend skills",
+      "title": "Backend"
+    },
+    "skill3": {
+      "alt-icon": "Reference icon for database skills",
+      "title": "Databases"
+    },
+    "skill4": {
+      "alt-icon": "Reference icon for DevOps/tools skills",
+      "title": "DevOps/Tools"
+    }
   }
+
+
 }

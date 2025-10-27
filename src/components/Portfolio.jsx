@@ -16,7 +16,7 @@ const Portfolio = () => {
                 <HeroSection/>
                 <ProjectsSection/>
                 <ExperienceSection/>
-                <section id="skills"><SkillsSection/></section>
+                <SkillsSection/>
                 <section id="contact"><ContactSection/></section>
             </main>
             <Footer />

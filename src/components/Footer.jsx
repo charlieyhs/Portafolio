@@ -1,9 +1,9 @@
 
 const Footer = () => {
     return (
-        <h1>
-            FOOTER
-        </h1>
+        <footer>
+            © 2025 Carlos Hernández — Todos los derechos reservados.
+        </footer>
     );
 }
 export default Footer;
