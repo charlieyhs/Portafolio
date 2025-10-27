@@ -1,0 +1,28 @@
+:root {
+    --green: #A3B18A;
+    --gray: #5C6B73;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-label {
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: var(--green);
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 300;
+    color: #333333;
+    letter-spacing: -1px;
+}

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import '../../css/projects.css'
+import '../css/projects.css'
 
-const ProjectBadge = ({name}) => {
+const Badge = ({name}) => {
     return (
         <span className="tech-badge">
             {name}
@@ -9,8 +9,8 @@ const ProjectBadge = ({name}) => {
     );
 };
 
-ProjectBadge.propTypes = {
+Badge.propTypes = {
     name : PropTypes.string.isRequired
 };
 
-export default ProjectBadge;
+export default Badge;

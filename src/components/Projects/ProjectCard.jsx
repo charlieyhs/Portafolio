@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import ProjectBadge from "./ProjectBadge";
 import '../../css/projects.css'
 import { useTranslation } from "react-i18next";
+import Badge from "../Badge";
 
 const ProjectCard = ({project}) => {
     const {t} = useTranslation();
@@ -14,7 +14,7 @@ const ProjectCard = ({project}) => {
             </p>
             <div className="project-tech">
                 {project.skills.map(skill => (
-                    <ProjectBadge key={skill.id} name={skill.name} />
+                    <Badge key={skill.id} name={skill.name} />
                 ))}
             </div>
             <a href={project.link} target="_blank" className="project-link">

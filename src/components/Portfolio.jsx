@@ -5,6 +5,7 @@ import HeroSection from "./Hero/HeroSection";
 import Navbar from "./Navbar";
 import ProjectsSection from "./Projects/ProjectsSection";
 import SkillsSection from "./Skills/SkillsSection";
+import '../css/portfolio.css'
 
 const Portfolio = () => {
     
@@ -14,7 +15,7 @@ const Portfolio = () => {
             <main>
                 <HeroSection/>
                 <ProjectsSection/>
-                <section id="experience"><ExperienceSection/></section>
+                <ExperienceSection/>
                 <section id="skills"><SkillsSection/></section>
                 <section id="contact"><ContactSection/></section>
             </main>

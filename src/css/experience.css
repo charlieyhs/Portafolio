@@ -1,0 +1,129 @@
+.experience-section {
+    padding: 120px 60px;
+    background: #FAFAFA;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #E0E0E0;
+}
+
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-content {
+  width: calc(60% - 40px);
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 12px;
+  padding: 35px;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(92, 107, 115, 0.1);
+  border-color: #A3B18A;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: #A3B18A;
+  border-radius: 50%;
+  border: 3px solid #FAFAFA;
+  box-shadow: 0 0 0 4px #E0E0E0;
+  z-index: 2;
+}
+
+.experience-date {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #A3B18A;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.experience-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.experience-company {
+  font-size: 15px;
+  color: #5C6B73;
+  margin-bottom: 15px;
+}
+
+.experience-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5C6B73;
+  margin-bottom: 20px;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 30px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: column !important;
+    padding-left: 50px;
+  }
+
+  .timeline-content {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .timeline-dot {
+    left: 20px;
+  }
+}
