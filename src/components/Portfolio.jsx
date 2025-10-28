@@ -17,7 +17,7 @@ const Portfolio = () => {
                 <ProjectsSection/>
                 <ExperienceSection/>
                 <SkillsSection/>
-                <section id="contact"><ContactSection/></section>
+                <ContactSection/>
             </main>
             <Footer />
         </>

@@ -6,3 +6,6 @@ export { default as frontend } from "./images/frontend.webp";
 export { default as backend } from "./images/backend.webp";
 export { default as bd } from "./images/bd.webp";
 export { default as devops } from "./images/devops.webp";
+export { default as email } from "./images/email.webp";
+export { default as github } from "./images/github.webp";
+export { default as linkedin } from "./images/linkedin.webp";

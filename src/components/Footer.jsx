@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const {t} = useTranslation();
     return (
         <footer>
-            © 2025 Carlos Hernández — Todos los derechos reservados.
+            {t('footer.description')}
         </footer>
     );
 }

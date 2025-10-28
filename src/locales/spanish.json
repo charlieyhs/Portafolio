@@ -52,20 +52,33 @@
         "label" : "Habilidades técnicas",
         "title" : "Habilidades",
         "skill1": {
-            "alt-icon" : "Icono de referencia para las habilidades de frontend",
+            "alt-icon" : "Frontend",
             "title" : "Frontend"
         },
         "skill2": {
-            "alt-icon" : "Icono de referencia para las habilidades de backend",
+            "alt-icon" : "Backend",
             "title" : "Backend"
         },
         "skill3": {
-            "alt-icon" : "Icono de referencia para las habilidades de bases de datos",
+            "alt-icon" : "Bases de datos",
             "title" : "Bases de datos"
         },
         "skill4": {
-            "alt-icon" : "Icono de referencia para las habilidades de devops/herramientas",
+            "alt-icon" : "Devops/herramientas",
             "title" : "DevOps/Herramientas"
         }
+    },
+    "contact" : {
+        "we-talk" : "¿Hablamos?",
+        "available" : "Estoy disponible para colaborar en proyectos, compartir ideas o simplemente conversar sobre desarrollo y tecnología.",
+        "email" : "Correo electrónico",
+        "alt-email" : "Correo electrónico",
+        "linkedin" : "Linkedin",
+        "alt-linkedin" : "Linkedin",
+        "github" : "Github",
+        "alt-github" : "Github"
+    },
+    "footer" : {
+        "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
     }
 }
