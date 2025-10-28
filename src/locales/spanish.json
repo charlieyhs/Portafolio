@@ -1,0 +1,84 @@
+{
+    "navbar": {
+        "logo-description": "Logo de marca personal",
+        "close-menu": "Cerrar menú",
+        "open-menu": "Abrir menú",
+        "projects": "PROYECTOS",
+        "experience": "EXPERIENCIA",
+        "skills": "CONOCIMIENTOS",
+        "contact": "CONTACTO"
+    },
+    "language-selector": {
+        "language": "IDIOMA",
+        "spanish": "Español",
+        "english": "Ingles"
+    },
+    "hero": {
+        "description-avatar" : "Imagen de avatar de Carlos Hernández",
+        "name" : "Carlos Hernández",
+        "self-description" : "Desarrollador de software con más de 3 años de experiencia en el diseño e implementación de soluciones tecnológicas eficientes y escalables, enfocado en resolver problemas complejos y mejorar la experiencia del usuario.",
+        "view-projects" : "Ver proyectos",
+        "aria-label-projects": "Ver mis proyectos destacados",
+        "contact" : "Contactar",
+        "aria-label-contact": "Ir a la sección de contacto",
+        "role": "Desarrollador Full Stack"
+    },
+    "projects": {
+        "view-project": "Ver proyecto →",
+        "featured-work" : "Trabajo destacado",
+        "selected-projects" : "Proyectos seleccionados",
+        "gym" : "Gimnasio",
+        "gym-description": "Gym Fitness Web es una aplicación frontend desarrollada con React que ofrece una experiencia moderna, dinámica y motivacional para un gimnasio. Presenta secciones interactivas como planes, clases, entrenadores y blog, con un diseño minimalista, profesional y responsivo que refleja el estilo de vida fitness.",
+        "savingsfund": "Fondo de ahorro",
+        "savingsfund-description": "El <strong>Fondo de Ahorro - Sistema de Gestión</strong> es una aplicación web que permite administrar un <strong>fondo de ahorro comunitario</strong>, facilitando el control de aportaciones, préstamos, inversiones y la información de los miembros. Ofrece una vista general del estado del fondo y herramientas para gestionar de forma organizada los recursos y movimientos financieros.",
+        "moto-viewer": "Moto 360°",
+        "moto-viewer-description" : "El <strong>Visor 360° Interactivo</strong> es una aplicación web que permite visualizar objetos desde todos los ángulos mediante imágenes precargadas. Ofrece una experiencia fluida e intuitiva con controles para rotación, zoom y navegación tanto en PC como en dispositivos móviles, combinando diseño moderno y alto rendimiento visual."
+    },
+    "experience": {
+        "professional-experience": "Trayectoria profesional",
+        "experience": "Experiencia",
+        "job1":{
+            "date": "Julio 2022 - Julio 2024",
+            "position" : "Desarrollador Junior",
+            "description" : "<ul><li>Desarrollé y mejoré aplicaciones empresariales utilizando <strong>Java EE</strong> y <strong>PrimeFaces</strong>, enfocándome en optimizar la <strong>usabilidad</strong> y la <strong>experiencia de más de 200 usuarios finales</strong>.</li><li>Diseñé y desarrollé <strong>módulos web dinámicos</strong> que facilitaron la interacción con los sistemas internos.</li><li>Implementé <strong>informes personalizados con JasperReports</strong>, logrando <strong>automatizar procesos de análisis de datos</strong> y <strong>reducir en un 30% el trabajo manual</strong> de los equipos operativos.</li><li>Contribuí en la <strong>migración de servicios hacia entornos más modernos</strong>, fortaleciendo la <strong>estabilidad</strong>, <strong>rendimiento</strong> y <strong>mantenibilidad del sistema</strong>, garantizando una transición fluida sin afectar las operaciones diarias.</li></ul>"
+        },
+        "job2":{
+            "date": "Julio 2024 - Presente",
+            "position" : "Desarrollador Senior",
+            "description" : "<ul><li>Diseñé e implementé <strong>APIs RESTful seguras</strong> utilizando <strong>OAuth 2.0</strong>, logrando una <strong>integración eficiente con proveedores externos</strong> y garantizando la protección de datos.</li><li>Colaboré directamente con <strong>clientes</strong> en la <strong>definición de requerimientos</strong>, asegurando que las soluciones desarrolladas estuvieran <strong>alineadas con sus necesidades y objetivos de negocio</strong>.</li><li><strong>Lideré proyectos clave</strong> desde la fase de definición hasta la entrega final, cumpliendo el <strong>100% de los plazos establecidos</strong> y asegurando la <strong>satisfacción del cliente</strong>.</li><li>Participé en la <strong>optimización de la arquitectura de microservicios</strong>, logrando una <strong>reducción del 15% en los tiempos de respuesta</strong> de las aplicaciones y mejorando su desempeño general.</li></ul>"
+        }
+    },
+    "skills": {
+        "label" : "Habilidades técnicas",
+        "title" : "Habilidades",
+        "skill1": {
+            "alt-icon" : "Frontend",
+            "title" : "Frontend"
+        },
+        "skill2": {
+            "alt-icon" : "Backend",
+            "title" : "Backend"
+        },
+        "skill3": {
+            "alt-icon" : "Bases de datos",
+            "title" : "Bases de datos"
+        },
+        "skill4": {
+            "alt-icon" : "Devops/herramientas",
+            "title" : "DevOps/Herramientas"
+        }
+    },
+    "contact" : {
+        "we-talk" : "¿Hablamos?",
+        "available" : "Estoy disponible para colaborar en proyectos, compartir ideas o simplemente conversar sobre desarrollo y tecnología.",
+        "email" : "Correo electrónico",
+        "alt-email" : "Correo electrónico",
+        "linkedin" : "Linkedin",
+        "alt-linkedin" : "Linkedin",
+        "github" : "Github",
+        "alt-github" : "Github"
+    },
+    "footer" : {
+        "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
+    }
+}

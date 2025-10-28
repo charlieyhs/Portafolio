@@ -1,9 +1,14 @@
+import Portfolio from "./components/Portfolio";
+import { LanguageProvider } from "./providers/LanguageProvider";
+import './css/app.css'
 
 function App() {
 
   return (
-    <h1>HOLA</h1>
+    <LanguageProvider> 
+      <Portfolio/>
+    </LanguageProvider>
   )
 }
 
-export default App
+export default App;
