@@ -11,7 +11,8 @@
 	"language-selector": {
 		"language": "LANGUAGE",
 		"spanish": "Spanish",
-		"english": "English"
+		"english": "English",
+		"change-language": "Button to change language"
 	},
 	"hero": {
 		"description-avatar": "Avatar image of Carlos Hernández",

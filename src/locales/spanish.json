@@ -11,7 +11,8 @@
     "language-selector": {
         "language": "IDIOMA",
         "spanish": "Español",
-        "english": "Ingles"
+        "english": "Ingles",
+        "change-language": "Botón para cambiar de idioma"
     },
     "hero": {
         "description-avatar" : "Imagen de avatar de Carlos Hernández",
@@ -80,5 +81,8 @@
     },
     "footer" : {
         "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
+    },
+    "theme": {
+        "alt" : "Botón de cambio de tema oscuro o claro"
     }
 }
