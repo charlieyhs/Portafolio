@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { logo } from '../assets/images';
+import { logo, whiteLogo } from '../assets/images';
 import '../css/nav-bar.css';
 import LanguageSelector from './LanguageSelector';
+import ThemeToggle from './ThemeToggle';
+import { useTheme } from '../hooks/useTheme';
 
 const Navbar = () => {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const {theme} = useTheme();
 
   const menus = [
     { id: '1', label: t('navbar.projects'), href: 'projects' },
@@ -29,7 +32,7 @@ const Navbar = () => {
           <button style={{background: 'transparent', border: 'none'}}
             onClick={() => { handleScroll('hero'); setMenuOpen(false); }}>
             <img
-              src={logo}
+              src={theme === "light" ? logo : whiteLogo}
               alt={t('navbar.logo-description')}
               title={t('navbar.logo-description')}
             />
@@ -61,6 +64,7 @@ const Navbar = () => {
             </li>
           ))}
           <LanguageSelector />
+          <ThemeToggle />
         </ul>
       </nav>
     </header>
