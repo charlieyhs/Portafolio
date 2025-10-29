@@ -6,10 +6,13 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #FAFAFA;
-    color: #333333;
     overflow-x: hidden;
     line-height: 1.6;
+}
+
+body.light {
+  background: #FAFAFA;
+  color: #333333;
 }
 
 section {
