@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { avatar } from "../../assets/images";
 import '../../css/hero.css'
+import TypeWriter from "./TypeWriter";
+import { socialMedia } from "../../data/hero";
 
 const HeroSection = () => {
     const { t } = useTranslation();
@@ -11,19 +13,11 @@ const HeroSection = () => {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     };
-
+    const typewriters = Array.from({ length: 4 }, (_, i) => t(`hero.skill${i + 1}`));
+    
     return (
         <section id="hero" className="hero-section" aria-labelledby="hero-title">
             <div className="hero-content">
-                <div className="hero-text-container">
-                    <h1 id="hero-title" className="hero-title">
-                        <strong className="hero-title-highlight">{t('hero.name')}</strong>
-                    </h1>
-                    <p className="hero-subtitle">
-                        {t('hero.self-description')}
-                    </p>
-                </div>
-                
                 <div className="hero-avatar-container">
                     <img 
                         src={avatar} 
@@ -33,10 +27,32 @@ const HeroSection = () => {
                         width="220"
                         height="220"
                     />
-                    <p className="hero-role">{t('hero.role')}</p>
                 </div>
+                <div className="hero-text-container">
+                    <h1 id="hero-title" className="hero-title">
+                        <strong className="hero-title-highlight">{t('hero.name')}</strong>
+                    </h1>
+                    <TypeWriter texts={typewriters} />
+                    <p className="hero-subtitle">
+                        {t('hero.self-description')}
+                    </p>
+                </div>
+                
             </div>
-
+            <div className="social-links">
+                {
+                    socialMedia.map(social => (
+                        <a key={social.id} href={social.link} className="social-link">
+                            <img src={social.icon} 
+                                title={t(social.altIcon)}
+                                alt={t(social.altIcon)}
+                                aria-label={t(social.altIcon)}
+                                width={20}
+                                height={20}/>
+                        </a>
+                    ))
+                }
+            </div>
             <div className="hero-cta">
                 <button 
                     className="cta-btn cta-primary"

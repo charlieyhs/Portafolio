@@ -22,7 +22,14 @@
         "aria-label-projects": "Ver mis proyectos destacados",
         "contact" : "Contactar",
         "aria-label-contact": "Ir a la sección de contacto",
-        "role": "Desarrollador Full Stack"
+        "skill1" : "Desarrollador Full Stack",
+        "skill2" : "Java & Spring",
+        "skill3" : "JavaScript & React",
+        "skill4" : "Apasionado por el Código Limpio",
+        "alt-email" : "Correo electrónico",
+        "alt-linkedin" : "Linkedin",
+        "alt-github" : "Github"
+
     },
     "projects": {
         "view-project": "Ver proyecto →",

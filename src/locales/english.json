@@ -22,7 +22,13 @@
 		"aria-label-projects": "View my featured projects",
 		"contact": "Contact",
 		"aria-label-contact": "Go to the contact section",
-		"role": "Full Stack Developer"
+		"skill1": "Full Stack Developer",
+		"skill2": "Java & Spring",
+		"skill3": "JavaScript & React",
+		"skill4": "Passionate about Clean Code",
+		"alt-email" : "Email",
+        "alt-linkedin" : "Linkedin",
+        "alt-github" : "Github"
 	},
 	"projects": {
 		"view-project": "View project →",

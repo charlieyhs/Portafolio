@@ -48,7 +48,7 @@
 .contact-btn:hover {
     background: #A3B18A;
     border-color: #A3B18A;
-    color: #FAFAFA;
+    color: #1B1B1B;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(163, 177, 138, 0.2);
 }
