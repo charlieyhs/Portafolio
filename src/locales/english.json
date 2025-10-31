@@ -3,10 +3,11 @@
 		"logo-description": "Personal brand logo",
 		"close-menu": "Close menu",
 		"open-menu": "Open menu",
-		"projects": "PROJECTS",
-		"experience": "EXPERIENCE",
-		"skills": "SKILLS",
-		"contact": "CONTACT"
+		"projects": "Projects",
+		"experience": "Experience",
+		"skills": "Skills",
+		"contact": "Contact",
+		"aboutme" : "About me"
 	},
 	"language-selector": {
 		"language": "LANGUAGE",
@@ -87,5 +88,22 @@
 	},
 	"footer": {
 		"description": "© 2025 Carlos Hernández — All rights reserved."
+	},
+    "theme": {
+        "alt" : "Dark or light theme toggle button"
+    },
+	"about": {
+		"about": "About Me",
+		"text1": "I’m a developer passionate about creating technological solutions that truly make an impact on people’s lives. My focus is on writing clean, maintainable, and scalable code.",
+		"text2": "I’m motivated by tackling complex challenges and turning them into efficient systems. I firmly believe in continuous learning and sharing knowledge with the community.",
+		"title-highlight1": "Focus",
+		"label-highlight1": "Scalable and maintainable solutions",
+		"title-highlight2": "Passion",
+		"label-highlight2": "Innovation and new technologies",
+		"title-highlight3": "Collaboration",
+		"label-highlight3": "Teamwork and mentorship",
+		"title-highlight4": "Goal",
+		"label-highlight4": "Positive impact through code"
 	}
+
 }

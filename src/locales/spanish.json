@@ -3,10 +3,11 @@
         "logo-description": "Logo de marca personal",
         "close-menu": "Cerrar menú",
         "open-menu": "Abrir menú",
-        "projects": "PROYECTOS",
-        "experience": "EXPERIENCIA",
-        "skills": "CONOCIMIENTOS",
-        "contact": "CONTACTO"
+        "projects": "Proyectos",
+        "experience": "Experiencia",
+        "skills": "Conocimientos",
+        "contact": "Contacto",
+        "aboutme" : "Sobre mí"
     },
     "language-selector": {
         "language": "IDIOMA",
@@ -91,5 +92,19 @@
     },
     "theme": {
         "alt" : "Botón de cambio de tema oscuro o claro"
+    },
+    "about": {
+        "about": "Sobre mí",
+        "text1": "Soy un desarrollador apasionado por crear soluciones tecnológicas que realmente impacten en la vida de las personas. Mi enfoque se centra en escribir código limpio, mantenible y escalable.",
+        "text2": "Me motiva enfrentar desafíos complejos y transformarlos en sistemas eficientes. Creo firmemente en el aprendizaje continuo y en compartir conocimiento con la comunidad.",
+        "title-highlight1": "Enfoque",
+        "label-highlight1": "Soluciones escalables y mantenibles",
+        "title-highlight2": "Pasión",
+        "label-highlight2": "Innovación y nuevas tecnologías",
+        "title-highlight3": "Colaboración",
+        "label-highlight3": "Trabajo en equipo y mentoría",
+        "title-highlight4": "Objetivo",
+        "label-highlight4": "Impacto positivo a través del código"
     }
+
 }

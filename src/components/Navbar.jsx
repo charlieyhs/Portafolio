@@ -12,6 +12,7 @@ const Navbar = () => {
   const {theme} = useTheme();
 
   const menus = [
+    { id: '5', label: t('navbar.aboutme'), href: 'aboutme' },
     { id: '1', label: t('navbar.projects'), href: 'projects' },
     { id: '2', label: t('navbar.experience'), href: 'experience' },
     { id: '3', label: t('navbar.skills'), href: 'skills' },

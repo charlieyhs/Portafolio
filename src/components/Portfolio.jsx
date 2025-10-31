@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import ProjectsSection from "./Projects/ProjectsSection";
 import SkillsSection from "./Skills/SkillsSection";
 import '../css/portfolio.css'
+import AboutMe from "./about/About";
 
 const Portfolio = () => {
     
@@ -14,6 +15,7 @@ const Portfolio = () => {
             <Navbar />
             <main>
                 <HeroSection/>
+                <AboutMe />
                 <ProjectsSection/>
                 <ExperienceSection/>
                 <SkillsSection/>
