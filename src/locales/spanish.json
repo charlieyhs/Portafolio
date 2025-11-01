@@ -79,9 +79,21 @@
             "title" : "Bases de datos"
         },
         "skill4": {
-            "alt-icon" : "Devops/herramientas",
-            "title" : "DevOps/Herramientas"
-        }
+            "alt-icon" : "Devops",
+            "title" : "DevOps"
+        },
+        "skill5": {
+            "alt-icon" : "Habilidades blandas",
+            "title" : "Habilidades blandas"
+        },
+        "skill6": {
+            "alt-icon" : "Herramientas",
+            "title" : "Herramientas"
+        },
+        "learning": "Actualmente aprendiendo",
+        "learning1": "Inglés",
+        "learning2": "JUnit",
+        "learning3": "Golang"
     },
     "contact" : {
         "we-talk" : "¿Hablamos?",

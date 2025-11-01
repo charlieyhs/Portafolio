@@ -15,3 +15,5 @@ export { default as light } from "./images/light.webp";
 export { default as gym } from "./images/gym.webp";
 export { default as motoViewer } from "./images/moto_viewer.webp";
 export { default as savingsFund } from "./images/savings_fund.webp";
+export { default as softSkills } from "./images/softskills.webp";
+export { default as tools } from "./images/tools.webp";

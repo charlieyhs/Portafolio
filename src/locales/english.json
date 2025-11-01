@@ -81,7 +81,19 @@
 		"skill4": {
 			"alt-icon": "Reference icon for DevOps/tools skills",
 			"title": "DevOps/Tools"
-		}
+		},
+        "skill5": {
+            "alt-icon" : "Soft skills",
+            "title" : "Soft skills"
+        },
+        "skill6": {
+            "alt-icon" : "Tools",
+            "title" : "Tools"
+        },
+		"learning": "Currently learning",
+		"learning1": "English",
+        "learning2": "JUnit",
+        "learning3": "Golang"
 	},
 	"contact": {
 		"we-talk": "Shall we talk?",
