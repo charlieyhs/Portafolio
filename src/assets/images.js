@@ -12,3 +12,6 @@ export { default as github } from "./images/github.webp";
 export { default as linkedin } from "./images/linkedin.webp";
 export { default as dark } from "./images/dark.webp";
 export { default as light } from "./images/light.webp";
+export { default as gym } from "./images/gym.webp";
+export { default as motoViewer } from "./images/moto_viewer.webp";
+export { default as savingsFund } from "./images/savings_fund.webp";

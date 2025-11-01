@@ -85,3 +85,19 @@
 .project-link:hover {
     gap: 12px;
 }
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}

@@ -5,7 +5,6 @@
     --dark-card: #2a2a2a;
     --light-bg: #FAFAFA;
     --white: #FFFFFF;
-    --text-dark: #333333;
 }
 .about-section {
     padding: 120px 60px;
@@ -23,7 +22,7 @@
 .about-text h2 {
     font-size: 42px;
     margin-bottom: 20px;
-    color: var(--text-dark);
+    color: #333333;
 }
 
 .about-text p {

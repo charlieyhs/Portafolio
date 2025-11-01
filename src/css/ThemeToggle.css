@@ -1,16 +1,15 @@
 /* ===== Variables globales ===== */
 :root {
-  /* Colores base */
   --green: #A3B18A;
   --gray: #5C6B73;
 
-  /* Modo claro */
+  
   --bg-light: #FAFAFA;
   --bg-section-light: #FFFFFF;
   --text-light: #333333;
   --text-secondary-light: #5C6B73;
 
-  /* Modo oscuro */
+  
   --bg-dark: #1E1E1E;
   --bg-section-dark: #2A2A2A;
   --border-dark: #444444;
@@ -176,4 +175,8 @@ body.dark .button-theme {
 body.dark .button-theme:hover {
   transform: scale(1.1);
   background: rgba(163, 177, 138, 0.2);
+}
+
+body.dark .social-link{
+  background: var(--green);
 }

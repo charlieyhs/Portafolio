@@ -3,6 +3,7 @@ import { avatar } from "../../assets/images";
 import '../../css/hero.css'
 import TypeWriter from "./TypeWriter";
 import { socialMedia } from "../../data/hero";
+import DownloadCV from "./DownloadCV";
 
 const HeroSection = () => {
     const { t } = useTranslation();
@@ -42,7 +43,8 @@ const HeroSection = () => {
             <div className="social-links">
                 {
                     socialMedia.map(social => (
-                        <a key={social.id} href={social.link} className="social-link">
+                        <a key={social.id} href={social.link} 
+                            className="social-link" target="_blank">
                             <img src={social.icon} 
                                 title={t(social.altIcon)}
                                 alt={t(social.altIcon)}
@@ -69,6 +71,9 @@ const HeroSection = () => {
                 >
                     {t('hero.contact')}
                 </button>
+
+                <DownloadCV />
+
             </div>
         </section>
     );

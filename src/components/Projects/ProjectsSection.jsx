@@ -19,6 +19,13 @@ const ProjectsSection = () => {
                     />
                 ))}
             </div>
+
+            <div style={{textAlign: 'center', marginTop: '50px'}}>
+                <a href="https://github.com/charlieyhs" target='_blank'
+                    className='cta-btn cta-secondary'>
+                    {t('projects.see-more')}
+                </a>
+            </div>
         </section>
     );
 }
