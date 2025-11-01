@@ -7,6 +7,7 @@ import ProjectsSection from "./Projects/ProjectsSection";
 import SkillsSection from "./Skills/SkillsSection";
 import '../css/portfolio.css'
 import AboutMe from "./about/About";
+import CertificationsSections from "./certifications/CertificationSections";
 
 const Portfolio = () => {
     
@@ -19,6 +20,7 @@ const Portfolio = () => {
                 <ProjectsSection/>
                 <ExperienceSection/>
                 <SkillsSection/>
+                <CertificationsSections/>
                 <ContactSection/>
             </main>
             <Footer />

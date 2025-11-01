@@ -12,11 +12,12 @@ const Navbar = () => {
   const {theme} = useTheme();
 
   const menus = [
-    { id: '5', label: t('navbar.aboutme'), href: 'aboutme' },
-    { id: '1', label: t('navbar.projects'), href: 'projects' },
-    { id: '2', label: t('navbar.experience'), href: 'experience' },
-    { id: '3', label: t('navbar.skills'), href: 'skills' },
-    { id: '4', label: t('navbar.contact'), href: 'contact' },
+    { id: '1', label: t('navbar.aboutme'), href: 'aboutme' },
+    { id: '2', label: t('navbar.projects'), href: 'projects' },
+    { id: '3', label: t('navbar.experience'), href: 'experience' },
+    { id: '4', label: t('navbar.skills'), href: 'skills' },
+    { id: '5', label: t('navbar.certification'), href: 'certification' },
+    { id: '6', label: t('navbar.contact'), href: 'contact' },
   ];
 
   const handleScroll = (id) => {
