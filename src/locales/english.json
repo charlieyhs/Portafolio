@@ -124,6 +124,37 @@
 		"label-highlight3": "Teamwork and mentorship",
 		"title-highlight4": "Goal",
 		"label-highlight4": "Positive impact through code"
+	},
+	"certification": {
+		"label": "Training and Certifications",
+		"title": "Education",
+		"certification1": {
+			"title": "Technology in Software Development",
+			"institution": "National Open and Distance University - UNAD",
+			"time": "January 2022 - December 2024",
+			"altImgInstitution": "Logo of the National Open and Distance University UNAD",
+			"altImgTitle": "Illustration representing software development"
+		},
+		"certification2": {
+			"title": "Diploma in Software Testing",
+			"institution": "National Open and Distance University - UNAD",
+			"time": "January 2025 – May 2025",
+			"altImgInstitution": "Logo of the National Open and Distance University UNAD",
+			"altImgTitle": "Illustration related to software testing or quality assurance"
+		},
+		"certification3": {
+			"title": "Diploma in Coding and Programming",
+			"institution": "Pontifical Xavierian University",
+			"time": "September 2021 – March 2022",
+			"altImgInstitution": "Logo of the Pontifical Xavierian University",
+			"altImgTitle": "Illustration representing coding and programming"
+		},
+		"certification4": {
+			"title": "Systems Technician",
+			"institution": "National Training Service - SENA",
+			"time": "February 2019 – November 2020",
+			"altImgInstitution": "Logo of the National Training Service SENA",
+			"altImgTitle": "Illustration related to computer systems"
+		}
 	}
-
 }
