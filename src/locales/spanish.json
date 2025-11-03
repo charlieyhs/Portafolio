@@ -124,6 +124,38 @@
         "label-highlight3": "Trabajo en equipo y mentoría",
         "title-highlight4": "Objetivo",
         "label-highlight4": "Impacto positivo a través del código"
+    },
+    "certification": {
+        "label": "Formación y certificaciones",
+        "title": "Educación",
+        "certification1": {
+            "title": "Tecnología en desarrollo de software",
+            "institution": "Universidad nacional abierta y a distancia - UNAD",
+            "time": "Enero 2022 - Diciembre 2024",
+            "altImgInstitution": "Logo de la Universidad Nacional Abierta y a Distancia UNAD",
+            "altImgTitle": "Ilustración representando el desarrollo de software"
+        },
+        "certification2": {
+            "title": "Diplomado en pruebas de software",
+            "institution": "Universidad nacional abierta y a distancia - UNAD",
+            "time": "enero 2025 – mayo 2025",
+            "altImgInstitution": "Logo de la Universidad Nacional Abierta y a Distancia UNAD",
+            "altImgTitle": "Ilustración alusiva a pruebas de software o aseguramiento de calidad"
+        },
+        "certification3": {
+            "title": "Diplomado Codificación y programación",
+            "institution": "Pontificia Universidad Javeriana",
+            "time": "septiembre 2021 – marzo 2022",
+            "altImgInstitution": "Logo de la Pontificia Universidad Javeriana",
+            "altImgTitle": "Ilustración representando la codificación y programación"
+        },
+        "certification4": {
+            "title": "Técnico en Sistemas",
+            "institution": "Servicio Nacional de Aprendizaje - SENA",
+            "time": "febrero 2019 – noviembre 2020",
+            "altImgInstitution": "Logo del Servicio Nacional de Aprendizaje SENA",
+            "altImgTitle": "Ilustración alusiva a sistemas informáticos"
+        }
     }
 
 }
