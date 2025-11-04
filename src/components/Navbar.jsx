@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { logo, whiteLogo } from '../assets/images';
+import { logo, whatsapp, whiteLogo } from '../assets/images';
 import '../css/nav-bar.css';
 import LanguageSelector from './LanguageSelector';
 import ThemeToggle from './ThemeToggle';
 import { useTheme } from '../hooks/useTheme';
+import { urlWhatsApp } from '../data/personal';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -67,6 +68,12 @@ const Navbar = () => {
           ))}
           <LanguageSelector />
           <ThemeToggle />
+          
+          <a href={urlWhatsApp}
+              target="_blank"
+              className="button-theme">
+              <img src={whatsapp} alt={t('contact.alt-whatsapp')}></img>
+          </a>
         </ul>
       </nav>
     </header>

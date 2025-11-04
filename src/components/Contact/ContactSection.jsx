@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { email, github, linkedin } from "../../assets/images";
+import { email, github, linkedin, whatsapp } from "../../assets/images";
 import '../../css/contact.css'
+import { urlWhatsApp } from "../../data/personal";
 
 const ContactSection = () => {
     
@@ -34,6 +35,12 @@ const ContactSection = () => {
                     {t('contact.github')}
                 </a>
 
+                <a href={urlWhatsApp}
+                    target="_blank"
+                    className="contact-btn">
+                    <img src={whatsapp} alt={t('contact.alt-whatsapp')}></img>
+                    {t('contact.whatsapp')}
+                </a>
             </div>
         </section>
     );

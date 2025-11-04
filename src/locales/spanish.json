@@ -104,7 +104,9 @@
         "linkedin" : "Linkedin",
         "alt-linkedin" : "Linkedin",
         "github" : "Github",
-        "alt-github" : "Github"
+        "alt-github" : "Github",
+        "whatsapp": "WhatsApp",
+        "alt-whatsapp" : "WhatsApp"
     },
     "footer" : {
         "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
