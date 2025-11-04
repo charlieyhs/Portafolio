@@ -7,7 +7,7 @@ const AboutMe = () => {
     const {t} = useTranslation();
 
     return (
-        <section id="aboutme" className="about-section">
+        <section id="aboutme" className="section section-gray">
             <div className="about-content">
                 <div className="about-text">
                     <h2>{t('about.about')}</h2>
@@ -15,7 +15,7 @@ const AboutMe = () => {
                     <p>{t('about.text2')}</p>
                     <div className="about-highlights">
                         {highlights.map(highlight => (
-                            <div key={highlight.id} className="about-card">
+                            <div key={highlight.id} className="card">
                                 <h4>{t(highlight.title)}</h4>
                                 <p>{t(highlight.label)}</p>
                             </div>

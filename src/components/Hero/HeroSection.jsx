@@ -23,7 +23,7 @@ const HeroSection = () => {
                     <img 
                         src={avatar} 
                         alt={t('hero.description-avatar')}
-                        className="hero-avatar"
+                        className="avatar"
                         loading="eager"
                         width="220"
                         height="220"
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </div>
             <div className="hero-cta">
                 <button 
-                    className="cta-btn cta-primary"
+                    className="btn btn-primary"
                     onClick={() => handleScroll('projects')}
                     aria-label={t('hero.aria-label-projects')}
                 >
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 </button>
 
                 <button 
-                    className="cta-btn cta-secondary"
+                    className="btn btn-secondary"
                     onClick={() => handleScroll('contact')}
                     aria-label={t('hero.aria-label-contact')}
                 >

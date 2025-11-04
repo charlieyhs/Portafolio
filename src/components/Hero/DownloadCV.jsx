@@ -10,7 +10,7 @@ const DownloadCV = () => {
     return (
         <a href={file}
             download
-            className="cta-btn cta-secondary">
+            className="btn btn-secondary">
             {t('hero.download-cv')}
         </a>
     );

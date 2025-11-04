@@ -1,22 +1,17 @@
-.experience-section {
-    padding: 120px 60px;
-    background: #FAFAFA;
-}
-
 .timeline {
-    max-width: 900px;
-    margin: 0 auto;
-    position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background: #E0E0E0;
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #E0E0E0;
 }
 
 
@@ -36,11 +31,7 @@
 
 .timeline-content {
   width: calc(60% - 40px);
-  background: #FFFFFF;
-  border: 1px solid #E0E0E0;
-  border-radius: 12px;
-  padding: 35px;
-  transition: all 0.3s ease;
+  padding: 30px;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
@@ -49,12 +40,6 @@
 
 .timeline-item:nth-child(even) .timeline-content {
   margin-left: auto;
-}
-
-.timeline-content:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(92, 107, 115, 0.1);
-  border-color: #A3B18A;
 }
 
 .timeline-dot {

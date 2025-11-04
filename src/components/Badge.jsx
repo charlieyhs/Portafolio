@@ -3,7 +3,7 @@ import '../css/projects.css'
 
 const Badge = ({name}) => {
     return (
-        <span className="tech-badge">
+        <span className="badge">
             {name}
         </span>
     );

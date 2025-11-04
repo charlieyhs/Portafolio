@@ -16,7 +16,7 @@ const CertificationsSections = () => {
     };
 
     return (
-        <section id="certification" className="certification-section"
+        <section id="certification" className="section section-gray"
             aria-labelledby="certification-title">
             <div className="section-header">
                 <div className="section-label">{t('certification.label')}</div>
@@ -32,7 +32,7 @@ const CertificationsSections = () => {
                     const imageCount = (hasInstitution ? 1 : 0) + (hasTitle ? 1 : 0);
 
                     return (
-                        <div key={cert.id} className="cert-card">
+                        <div key={cert.id} className="card">
                             <div className={`cert-icon cert-icon-count-${imageCount}`}>
                                 {hasInstitution && (
                                     <div className="cert-icon_image-wrapper">

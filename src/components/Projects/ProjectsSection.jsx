@@ -7,7 +7,7 @@ const ProjectsSection = () => {
     const {t} = useTranslation();
 
     return (
-        <section className="projects-section" id="projects">
+        <section className="section section-light" id="projects">
             <div className="section-header">
                 <div className="section-label">{t('projects.featured-work')}</div>
                 <h2 className="section-title">{t('projects.selected-projects')}</h2>
@@ -22,7 +22,7 @@ const ProjectsSection = () => {
 
             <div style={{textAlign: 'center', marginTop: '50px'}}>
                 <a href="https://github.com/charlieyhs" target='_blank'
-                    className='cta-btn cta-secondary'>
+                    className='btn btn-secondary'>
                     {t('projects.see-more')}
                 </a>
             </div>

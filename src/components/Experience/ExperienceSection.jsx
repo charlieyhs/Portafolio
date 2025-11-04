@@ -7,7 +7,7 @@ const ExperienceSection = () => {
     const {t} = useTranslation();
 
     return (
-        <section id="experience" className="experience-section">
+        <section id="experience" className="section section-gray">
             <div className="section-header">
                 <div className="section-label">{t('experience.professional-experience')}</div>
                 <h2 className="section-title">{t('experience.experience')}</h2>

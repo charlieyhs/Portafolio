@@ -14,7 +14,6 @@ const Portfolio = () => {
 
     useEffect(()=> {
         const handleScroll = () => {
-            console.log(window.scrollY);
             if(window.scrollY > 100){
                 setVisible(true);
             }else{

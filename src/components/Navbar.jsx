@@ -1,83 +1,100 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { logo, whatsapp, whiteLogo } from '../assets/images';
-import '../css/nav-bar.css';
-import LanguageSelector from './LanguageSelector';
-import ThemeToggle from './ThemeToggle';
-import { useTheme } from '../hooks/useTheme';
-import { urlWhatsApp } from '../data/personal';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { logo, whatsapp, whiteLogo } from "../assets/images";
+import "../css/nav-bar.css";
+import LanguageSelector from "./LanguageSelector";
+import ThemeToggle from "./ThemeToggle";
+import { useTheme } from "../hooks/useTheme";
+import { urlWhatsApp } from "../data/personal";
 
 const Navbar = () => {
-  const { t } = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const {theme} = useTheme();
+    const { t } = useTranslation();
+    const [menuOpen, setMenuOpen] = useState(false);
+    const { theme } = useTheme();
 
-  const menus = [
-    { id: '1', label: t('navbar.aboutme'), href: 'aboutme' },
-    { id: '2', label: t('navbar.projects'), href: 'projects' },
-    { id: '3', label: t('navbar.experience'), href: 'experience' },
-    { id: '4', label: t('navbar.skills'), href: 'skills' },
-    { id: '5', label: t('navbar.certification'), href: 'certification' },
-    { id: '6', label: t('navbar.contact'), href: 'contact' },
-  ];
+    const menus = [
+        { id: "1", label: t("navbar.aboutme"), href: "aboutme" },
+        { id: "2", label: t("navbar.projects"), href: "projects" },
+        { id: "3", label: t("navbar.experience"), href: "experience" },
+        { id: "4", label: t("navbar.skills"), href: "skills" },
+        { id: "5", label: t("navbar.certification"), href: "certification" },
+        { id: "6", label: t("navbar.contact"), href: "contact" },
+    ];
 
-  const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        const offset = 50;
 
-  return (
-    <header>
-      <nav>
-        <div className="logo">
-          <button style={{background: 'transparent', border: 'none'}}
-            onClick={() => { handleScroll('hero'); setMenuOpen(false); }}>
-            <img
-              src={theme === "light" ? logo : whiteLogo}
-              alt={t('navbar.logo-description')}
-              title={t('navbar.logo-description')}
-            />
-          </button>
-        </div>
+        if (element) {
+            const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+        }
+    };
 
-        {/* Botón hamburguesa */}
-        <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label={menuOpen ? t('navbar.close-menu') : t('navbar.open-menu')}
-        >
-          {menuOpen ? '✕' : '☰'}
-        </button>
+    return (
+        <header>
+            <nav>
+                <div className="logo">
+                    <button
+                        style={{ background: "transparent", border: "none" }}
+                        onClick={() => {
+                            handleScroll("hero");
+                            setMenuOpen(false);
+                        }}
+                    >
+                        <img
+                            src={theme === "light" ? logo : whiteLogo}
+                            alt={t("navbar.logo-description")}
+                            title={t("navbar.logo-description")}
+                        />
+                    </button>
+                </div>
 
-        {/* Menú principal */}
-        <ul className={`nav-menu ${menuOpen ? 'open' : ''}`}>
-          {menus.map((menu) => (
-            <li key={menu.id}>
-              <button
-                className="nav-item"
-                onClick={() => {
-                  handleScroll(menu.href);
-                  setMenuOpen(false);
-                }}
-              >
-                {menu.label}
-              </button>
-            </li>
-          ))}
-          <LanguageSelector />
-          <ThemeToggle />
-          
-          <a href={urlWhatsApp}
-              target="_blank"
-              className="button-theme">
-              <img src={whatsapp} alt={t('contact.alt-whatsapp')}></img>
-          </a>
-        </ul>
-      </nav>
-    </header>
-  );
+                {/* Botón hamburguesa */}
+                <button
+                    className="menu-toggle"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label={
+                        menuOpen
+                            ? t("navbar.close-menu")
+                            : t("navbar.open-menu")
+                    }
+                >
+                    {menuOpen ? "✕" : "☰"}
+                </button>
+
+                {/* Menú principal */}
+                <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
+                    {menus.map((menu) => (
+                        <li key={menu.id}>
+                            <button
+                                className="nav-item"
+                                onClick={() => {
+                                    handleScroll(menu.href);
+                                    setMenuOpen(false);
+                                }}
+                            >
+                                {menu.label}
+                            </button>
+                        </li>
+                    ))}
+                    <LanguageSelector />
+                    <ThemeToggle />
+
+                    <a
+                        href={urlWhatsApp}
+                        target="_blank"
+                        className="button-theme"
+                    >
+                        <img
+                            src={whatsapp}
+                            alt={t("contact.alt-whatsapp")}
+                        ></img>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    );
 };
 
 export default Navbar;

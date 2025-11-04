@@ -6,7 +6,7 @@ import Badge from "../Badge";
 const ProjectCard = ({project}) => {
     const {t} = useTranslation();
     return (
-        <div className="project-card">
+        <div className="card">
             <div className="project-image">
                 <img src={project.img} 
                     alt={project.altImg}
