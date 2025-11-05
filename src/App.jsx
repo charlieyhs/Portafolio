@@ -1,5 +1,6 @@
 import Portfolio from "./components/Portfolio";
 import { LanguageProvider } from "./providers/LanguageProvider";
+import './css/utilities.css'
 import './css/app.css'
 import ThemeProvider from "./providers/ThemeProvider";
 

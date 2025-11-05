@@ -1,4 +1,4 @@
-import { backend, bd, devops, frontend } from "../assets/images";
+import { backend, bd, devops, frontend, softSkills, tools } from "../assets/images";
 
 export const skills = [
     {
@@ -36,8 +36,26 @@ export const skills = [
         altIcon : "skill.skill4.alt-icon",
         title : "skills.skill4.title",
         skills : [
-            "Docker · ", "Git · ", "CI/CD · ", "Linux · ", "AWS",
+            "Docker · ", "Git · ", "CI/CD · ", "Linux · ","Azure · ", "AWS",
+        ]
+    },
+    {
+        id : "05",
+        icon : softSkills,
+        altIcon : "skill.skill5.alt-icon",
+        title : "skills.skill5.title",
+        skills : [
+            "Liderazgo · ", "Comunicación · ", "Trabajo en equipo · ", "Resolución de problemas"
+        ]
+    },
+    {
+        id : "06",
+        icon : tools,
+        altIcon : "skill.skill5.alt-icon",
+        title : "skills.skill5.title",
+        skills : [
+            "IntelliJ IDEA · ", "VS Code · ", "MyEclipse · ", "Postman · ", "JasperSoft",
         ]
     }
-
 ]
+export const learning = ["skills.learning1","skills.learning2", "skills.learning3"]

@@ -5,7 +5,7 @@ const SkillCard = ({skill}) => {
     const {t} = useTranslation();
 
     return (
-        <div className="skill-category">
+        <div className="card">
             
             <img className="skill-icon" src={skill.icon} alt={t(skill.altIcon)}></img>
             
