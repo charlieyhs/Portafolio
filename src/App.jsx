@@ -1,13 +1,16 @@
 import Portfolio from "./components/Portfolio";
 import { LanguageProvider } from "./providers/LanguageProvider";
+import './css/utilities.css'
 import './css/app.css'
+import ThemeProvider from "./providers/ThemeProvider";
 
 function App() {
-
   return (
-    <LanguageProvider> 
-      <Portfolio/>
-    </LanguageProvider>
+    <ThemeProvider>
+      <LanguageProvider>
+        <Portfolio />
+      </LanguageProvider>
+    </ThemeProvider>
   )
 }
 

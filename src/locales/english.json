@@ -3,15 +3,18 @@
 		"logo-description": "Personal brand logo",
 		"close-menu": "Close menu",
 		"open-menu": "Open menu",
-		"projects": "PROJECTS",
-		"experience": "EXPERIENCE",
-		"skills": "SKILLS",
-		"contact": "CONTACT"
+		"projects": "Projects",
+		"experience": "Experience",
+		"skills": "Skills",
+		"contact": "Contact",
+		"aboutme" : "About me",
+		"certification" : "Certifications"
 	},
 	"language-selector": {
 		"language": "LANGUAGE",
 		"spanish": "Spanish",
-		"english": "English"
+		"english": "English",
+		"change-language": "Button to change language"
 	},
 	"hero": {
 		"description-avatar": "Avatar image of Carlos Hernández",
@@ -21,18 +24,31 @@
 		"aria-label-projects": "View my featured projects",
 		"contact": "Contact",
 		"aria-label-contact": "Go to the contact section",
-		"role": "Full Stack Developer"
+		"skill1": "Full Stack Developer",
+		"skill2": "Java & Spring",
+		"skill3": "JavaScript & React",
+		"skill4": "Passionate about Clean Code",
+		"alt-email" : "Email",
+        "alt-linkedin" : "Linkedin",
+        "alt-github" : "Github",
+		"download-cv": "Download CV"
 	},
 	"projects": {
 		"view-project": "View project →",
+		"frontend": "Frontend →",
+        "backend": "Backend →",
 		"featured-work": "Featured Work",
 		"selected-projects": "Selected Projects",
-		"gym": "Gym",
+		"gym": "Valhalla Gym",
 		"gym-description": "Gym Fitness Web is a frontend application built with React that provides a modern, dynamic, and motivational experience for a gym. It features interactive sections such as plans, classes, trainers, and a blog, with a minimalist, professional, and responsive design that reflects the fitness lifestyle.",
 		"savingsfund": "Savings Fund",
 		"savingsfund-description": "The <strong>Savings Fund - Management System</strong> is a web application designed to manage a <strong>community savings fund</strong>, facilitating the control of contributions, loans, investments, and member information. It offers an overview of the fund’s status and tools to efficiently manage financial resources and transactions.",
 		"moto-viewer": "Moto 360°",
-		"moto-viewer-description": "The <strong>Interactive 360° Viewer</strong> is a web application that allows users to view objects from every angle through preloaded images. It provides a smooth and intuitive experience with rotation, zoom, and navigation controls for both PC and mobile devices, combining modern design and high visual performance."
+		"moto-viewer-description": "The <strong>Interactive 360° Viewer</strong> is a web application that allows users to view objects from every angle through preloaded images. It provides a smooth and intuitive experience with rotation, zoom, and navigation controls for both PC and mobile devices, combining modern design and high visual performance.",
+		"gym-alt-img" : "Main background of the gym project",
+		"savingsfund-alt-img": "Main fund of the savings fund project",
+        "motoviewer-alt-img": "Main background of the Moto 360 project",
+		"see-more": "See more projects on GitHub"
 	},
 	"experience": {
 		"professional-experience": "Professional Experience",
@@ -66,7 +82,19 @@
 		"skill4": {
 			"alt-icon": "Reference icon for DevOps/tools skills",
 			"title": "DevOps/Tools"
-		}
+		},
+        "skill5": {
+            "alt-icon" : "Soft skills",
+            "title" : "Soft skills"
+        },
+        "skill6": {
+            "alt-icon" : "Tools",
+            "title" : "Tools"
+        },
+		"learning": "Currently learning",
+		"learning1": "English",
+        "learning2": "JUnit",
+        "learning3": "Golang"
 	},
 	"contact": {
 		"we-talk": "Shall we talk?",
@@ -80,5 +108,53 @@
 	},
 	"footer": {
 		"description": "© 2025 Carlos Hernández — All rights reserved."
+	},
+    "theme": {
+        "alt" : "Dark or light theme toggle button"
+    },
+	"about": {
+		"about": "About Me",
+		"text1": "I’m a developer passionate about creating technological solutions that truly make an impact on people’s lives. My focus is on writing clean, maintainable, and scalable code.",
+		"text2": "I’m motivated by tackling complex challenges and turning them into efficient systems. I firmly believe in continuous learning and sharing knowledge with the community.",
+		"title-highlight1": "Focus",
+		"label-highlight1": "Scalable and maintainable solutions",
+		"title-highlight2": "Passion",
+		"label-highlight2": "Innovation and new technologies",
+		"title-highlight3": "Collaboration",
+		"label-highlight3": "Teamwork and mentorship",
+		"title-highlight4": "Goal",
+		"label-highlight4": "Positive impact through code"
+	},
+	"certification": {
+		"label": "Training and Certifications",
+		"title": "Education",
+		"certification1": {
+			"title": "Technology in Software Development",
+			"institution": "National Open and Distance University - UNAD",
+			"time": "January 2022 - December 2024",
+			"altImgInstitution": "Logo of the National Open and Distance University UNAD",
+			"altImgTitle": "Illustration representing software development"
+		},
+		"certification2": {
+			"title": "Diploma in Software Testing",
+			"institution": "National Open and Distance University - UNAD",
+			"time": "January 2025 – May 2025",
+			"altImgInstitution": "Logo of the National Open and Distance University UNAD",
+			"altImgTitle": "Illustration related to software testing or quality assurance"
+		},
+		"certification3": {
+			"title": "Diploma in Coding and Programming",
+			"institution": "Pontifical Xavierian University",
+			"time": "September 2021 – March 2022",
+			"altImgInstitution": "Logo of the Pontifical Xavierian University",
+			"altImgTitle": "Illustration representing coding and programming"
+		},
+		"certification4": {
+			"title": "Systems Technician",
+			"institution": "National Training Service - SENA",
+			"time": "February 2019 – November 2020",
+			"altImgInstitution": "Logo of the National Training Service SENA",
+			"altImgTitle": "Illustration related to computer systems"
+		}
 	}
 }

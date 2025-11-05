@@ -1,0 +1,325 @@
+:root {
+    --green: #A3B18A;
+    --gray: #5C6B73;
+    --dark-bg: #1a1a1a;
+    --dark-card: #2a2a2a;
+    --light-bg: #FAFAFA;
+    --white: #FFFFFF;
+    --text-dark: #333333;
+    
+    /* Variables para tema claro */
+    --bg-light: #FAFAFA;
+    --bg-section-light: #FFFFFF;
+    --text-light: #333333;
+    --text-secondary-light: #5C6B73;
+    
+    /* Variables para tema oscuro */
+    --bg-dark: #0F1419;
+    --bg-section-dark: #1A1F26;
+    --bg-card-dark: #232930;
+    --border-dark: #2D3748;
+    --text-dark: #F7FAFC;
+    --text-secondary-dark: #A0AEC0;
+
+
+    /* Variables dinámicas que cambiarán con el tema */
+    --bg-page: var(--bg-light);
+    --text: var(--text-light);
+    --text-secondary: var(--text-secondary-light);
+    --bg-section: var(--bg-section-light);
+    --border: #E0E0E0;
+
+    /* Solo como referencia, no para usar en media queries */
+    --breakpoint-mobile: 768px;
+    --breakpoint-tablet: 1024px;
+    --breakpoint-desktop: 1200px;
+}
+
+body.dark {
+    --bg-page: var(--bg-dark);
+    --text: var(--text-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --bg-section: var(--bg-section-dark);
+    --border: var(--border-dark);
+}
+
+body.dark header {
+    background: rgba(15, 20, 25, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(163, 177, 138, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background: var(--bg-section);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    color: var(--text);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(92, 107, 115, 0.1);
+    border-color: var(--green);
+}
+
+body.dark .card {
+    background: var(--bg-card-dark);
+    border: 1px solid var(--border-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .card:hover {
+    border-color: var(--green);
+    box-shadow: 0 8px 20px rgba(163, 177, 138, 0.15),
+                0 0 0 1px rgba(163, 177, 138, 0.1);
+    transform: translateY(-5px);
+}
+
+.btn {
+    padding: 14px 32px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: #FAFAFA;
+}
+
+body.dark .btn-primary {
+    background: var(--green);
+    box-shadow: 0 4px 12px rgba(163, 177, 138, 0.3);
+}
+
+body.dark .btn-primary:hover {
+    background: #8a9877;
+    box-shadow: 0 6px 20px rgba(163, 177, 138, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--green);
+    color: var(--text-secondary);
+}
+
+body.dark .btn-secondary {
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: rgba(163, 177, 138, 0.05);
+}
+
+body.dark .btn-secondary:hover {
+    background: var(--green);
+    color: var(--bg-dark);
+}
+
+.section {
+    padding: 120px 60px;
+    background: var(--bg-page);
+}
+
+.section-light {
+    background: var(--bg-section-light);
+}
+
+body.dark .section-light {
+    background: var(--bg-section-dark);
+}
+
+.section-gray {
+    background: var(--bg-light);
+}
+
+body.dark .section-gray {
+    background: var(--bg-dark);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-label {
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: var(--green);
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: -1px;
+}
+
+body.dark .section-title {
+    color: var(--text);
+}
+
+.badge {
+    padding: 6px 14px;
+    background: var(--bg-section);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+body.dark .badge {
+    background: rgba(163, 177, 138, 0.1);
+    border: 1px solid rgba(163, 177, 138, 0.3);
+    color: var(--text-dark);
+}
+
+.badge-learning {
+    padding: 8px 16px;
+    background: var(--green);
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.link {
+    color: var(--green);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    gap: 12px;
+}
+
+.img-contain {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-rounded {
+    border-radius: 12px;
+}
+
+.avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 0 8px 32px rgba(163, 177, 138, 0.2);
+}
+
+body.dark .avatar {
+    box-shadow: 0 8px 32px rgba(163, 177, 138, 0.3),
+                0 0 60px rgba(163, 177, 138, 0.1);
+}
+
+body.dark .avatar:hover {
+    box-shadow: 0 12px 48px rgba(163, 177, 138, 0.4),
+                0 0 80px rgba(163, 177, 138, 0.2);
+}
+
+.card, .btn, header {
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+    
+    .grid-2-columns {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .grid-2-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .grid-auto-fit {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .section {
+        padding: 80px 20px;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 60px 15px;
+    }
+}

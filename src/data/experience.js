@@ -19,7 +19,7 @@ export const experiences = [
         ],
     },
     {
-        id: "01",
+        id: "02",
         date: "experience.job2.date",
         position: "experience.job2.position",
         company: "Giitic S.A.S",

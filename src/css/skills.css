@@ -1,28 +1,9 @@
-.skills-section {
-    padding: 120px 60px;
-    background: #FFFFFF;
-}
 .skills-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-}
-
-.skill-category {
-    text-align: center;
-    padding: 40px 30px;
-    background: #FAFAFA;
-    border: 1px solid #E0E0E0;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
-
-.skill-category:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(92, 107, 115, 0.1);
-    border-color: #A3B18A;
 }
 
 .skill-icon {
@@ -37,7 +18,16 @@
     transition: all 0.3s ease;
 }
 
-.skill-category:hover .skill-icon {
+body.dark .skill-icon {
+    background: var(--bg-card-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .card:hover .skill-icon {
+    box-shadow: 0 6px 20px rgba(163, 177, 138, 0.2);
+}
+
+.card:hover .skill-icon {
     transform: scale(1.1);
 }
 
@@ -45,11 +35,95 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
-    color: #333333;
+    color: var(--text);
 }
 
 .skill-list {
-    color: #5C6B73;
+    color: var(--text-secondary);
     font-size: 14px;
     line-height: 1.8;
+}
+
+.learning-section {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 40px;
+    background: var(--bg-section);
+    border-radius: 12px;
+    border: 2px dashed var(--green);
+}
+
+body.dark-mode .learning-section {
+    background: var(--dark-card);
+}
+
+.learning-section h3 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--green);
+    margin-bottom: 20px;
+}
+
+.learning-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.learning-tag {
+    padding: 8px 16px;
+    background: var(--green);
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .learning-section {
+        margin: 40px auto 0;
+        padding: 30px 20px;
+    }
+    
+    .learning-tags {
+        gap: 8px;
+    }
+    
+    .learning-tag {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .skill-title {
+        font-size: 18px;
+    }
+    
+    .learning-section h3 {
+        font-size: 20px;
+    }
 }

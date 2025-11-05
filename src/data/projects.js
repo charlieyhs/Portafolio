@@ -1,3 +1,5 @@
+import { gym, motoViewer, savingsFund } from "../assets/images";
+
 export const projects = [
     {
         id: "01",
@@ -13,7 +15,10 @@ export const projects = [
             {id: "7", name: "JavaScript"},
             {id: "8", name: "Chart.js"},
         ],
-        link: "https://charlieyhs.github.io/Valhalla-Gym"
+        link: "https://charlieyhs.github.io/Valhalla-Gym",
+        frontend: "https://github.com/charlieyhs/Valhalla-Gym",
+        img: gym,
+        altImg: "project.gym-alt-img"
     },
     {
         id: "02",
@@ -34,7 +39,11 @@ export const projects = [
             {id: "12", name: "React Router DOM"},
             {id: "13", name: "JavaScript"},
         ],
-        link: "https://savingfund.onrender.com"
+        link: "https://savingfund.onrender.com",
+        frontend: "https://github.com/charlieyhs/fondo_ahorro_frontend",
+        backend: "https://github.com/charlieyhs/fondo_ahorro_backend",
+        img: savingsFund,
+        altImg: "project.savingsfund-alt-img"
     },
     {
         id: "03",
@@ -46,6 +55,9 @@ export const projects = [
             {id: "3", name: "JavaScript"},
             {id: "4", name: "Vite"},
         ],
-        link: "https://charlieyhs.github.io/moto-viewer"
+        link: "https://charlieyhs.github.io/moto-viewer",
+        frontend: "https://github.com/charlieyhs/moto-viewer",
+        img: motoViewer,
+        altImg: "project.motoviewer-alt-img"
     },
 ]
