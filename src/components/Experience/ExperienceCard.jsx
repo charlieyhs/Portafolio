@@ -9,7 +9,7 @@ const ExperienceCard = ({experience}) => {
     return (
         <div className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-content">
+            <div className="card timeline-content">
                 <div className="experience-date">{t(experience.date)}</div>
                 <h3 className="experience-title">{t(experience.position)}</h3>
                 <div className="experience-company">{experience.company}</div>

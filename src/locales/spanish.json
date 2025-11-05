@@ -3,10 +3,12 @@
         "logo-description": "Logo de marca personal",
         "close-menu": "Cerrar menú",
         "open-menu": "Abrir menú",
-        "projects": "PROYECTOS",
-        "experience": "EXPERIENCIA",
-        "skills": "CONOCIMIENTOS",
-        "contact": "CONTACTO"
+        "projects": "Proyectos",
+        "experience": "Experiencia",
+        "skills": "Conocimientos",
+        "contact": "Contacto",
+        "aboutme" : "Sobre mí",
+        "certification" : "Certificaciones"
     },
     "language-selector": {
         "language": "IDIOMA",
@@ -22,18 +24,31 @@
         "aria-label-projects": "Ver mis proyectos destacados",
         "contact" : "Contactar",
         "aria-label-contact": "Ir a la sección de contacto",
-        "role": "Desarrollador Full Stack"
+        "skill1" : "Desarrollador Full Stack",
+        "skill2" : "Java & Spring",
+        "skill3" : "JavaScript & React",
+        "skill4" : "Apasionado por el Código Limpio",
+        "alt-email" : "Correo electrónico",
+        "alt-linkedin" : "Linkedin",
+        "alt-github" : "Github",
+        "download-cv": "Descargar CV"
     },
     "projects": {
         "view-project": "Ver proyecto →",
+        "frontend": "Frontend →",
+        "backend": "Backend →",
         "featured-work" : "Trabajo destacado",
         "selected-projects" : "Proyectos seleccionados",
-        "gym" : "Gimnasio",
+        "gym" : "Gimnasio Valhalla",
         "gym-description": "Gym Fitness Web es una aplicación frontend desarrollada con React que ofrece una experiencia moderna, dinámica y motivacional para un gimnasio. Presenta secciones interactivas como planes, clases, entrenadores y blog, con un diseño minimalista, profesional y responsivo que refleja el estilo de vida fitness.",
         "savingsfund": "Fondo de ahorro",
         "savingsfund-description": "El <strong>Fondo de Ahorro - Sistema de Gestión</strong> es una aplicación web que permite administrar un <strong>fondo de ahorro comunitario</strong>, facilitando el control de aportaciones, préstamos, inversiones y la información de los miembros. Ofrece una vista general del estado del fondo y herramientas para gestionar de forma organizada los recursos y movimientos financieros.",
         "moto-viewer": "Moto 360°",
-        "moto-viewer-description" : "El <strong>Visor 360° Interactivo</strong> es una aplicación web que permite visualizar objetos desde todos los ángulos mediante imágenes precargadas. Ofrece una experiencia fluida e intuitiva con controles para rotación, zoom y navegación tanto en PC como en dispositivos móviles, combinando diseño moderno y alto rendimiento visual."
+        "moto-viewer-description" : "El <strong>Visor 360° Interactivo</strong> es una aplicación web que permite visualizar objetos desde todos los ángulos mediante imágenes precargadas. Ofrece una experiencia fluida e intuitiva con controles para rotación, zoom y navegación tanto en PC como en dispositivos móviles, combinando diseño moderno y alto rendimiento visual.",
+        "gym-alt-img": "Fondo principal del proyecto de gimnasio",
+        "savingsfund-alt-img": "Fondo principal del proyecto de fondo de ahorro",
+        "motoviewer-alt-img": "Fondo principal del proyecto de moto 360",
+        "see-more": "Ver más proyectos en Github"
     },
     "experience": {
         "professional-experience": "Trayectoria profesional",
@@ -65,9 +80,21 @@
             "title" : "Bases de datos"
         },
         "skill4": {
-            "alt-icon" : "Devops/herramientas",
-            "title" : "DevOps/Herramientas"
-        }
+            "alt-icon" : "Devops",
+            "title" : "DevOps"
+        },
+        "skill5": {
+            "alt-icon" : "Habilidades blandas",
+            "title" : "Habilidades blandas"
+        },
+        "skill6": {
+            "alt-icon" : "Herramientas",
+            "title" : "Herramientas"
+        },
+        "learning": "Actualmente aprendiendo",
+        "learning1": "Inglés",
+        "learning2": "JUnit",
+        "learning3": "Golang"
     },
     "contact" : {
         "we-talk" : "¿Hablamos?",
@@ -77,12 +104,60 @@
         "linkedin" : "Linkedin",
         "alt-linkedin" : "Linkedin",
         "github" : "Github",
-        "alt-github" : "Github"
+        "alt-github" : "Github",
+        "whatsapp": "WhatsApp",
+        "alt-whatsapp" : "WhatsApp"
     },
     "footer" : {
         "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
     },
     "theme": {
         "alt" : "Botón de cambio de tema oscuro o claro"
+    },
+    "about": {
+        "about": "Sobre mí",
+        "text1": "Soy un desarrollador apasionado por crear soluciones tecnológicas que realmente impacten en la vida de las personas. Mi enfoque se centra en escribir código limpio, mantenible y escalable.",
+        "text2": "Me motiva enfrentar desafíos complejos y transformarlos en sistemas eficientes. Creo firmemente en el aprendizaje continuo y en compartir conocimiento con la comunidad.",
+        "title-highlight1": "Enfoque",
+        "label-highlight1": "Soluciones escalables y mantenibles",
+        "title-highlight2": "Pasión",
+        "label-highlight2": "Innovación y nuevas tecnologías",
+        "title-highlight3": "Colaboración",
+        "label-highlight3": "Trabajo en equipo y mentoría",
+        "title-highlight4": "Objetivo",
+        "label-highlight4": "Impacto positivo a través del código"
+    },
+    "certification": {
+        "label": "Formación y certificaciones",
+        "title": "Educación",
+        "certification1": {
+            "title": "Tecnología en desarrollo de software",
+            "institution": "Universidad nacional abierta y a distancia - UNAD",
+            "time": "Enero 2022 - Diciembre 2024",
+            "altImgInstitution": "Logo de la Universidad Nacional Abierta y a Distancia UNAD",
+            "altImgTitle": "Ilustración representando el desarrollo de software"
+        },
+        "certification2": {
+            "title": "Diplomado en pruebas de software",
+            "institution": "Universidad nacional abierta y a distancia - UNAD",
+            "time": "enero 2025 – mayo 2025",
+            "altImgInstitution": "Logo de la Universidad Nacional Abierta y a Distancia UNAD",
+            "altImgTitle": "Ilustración alusiva a pruebas de software o aseguramiento de calidad"
+        },
+        "certification3": {
+            "title": "Diplomado Codificación y programación",
+            "institution": "Pontificia Universidad Javeriana",
+            "time": "septiembre 2021 – marzo 2022",
+            "altImgInstitution": "Logo de la Pontificia Universidad Javeriana",
+            "altImgTitle": "Ilustración representando la codificación y programación"
+        },
+        "certification4": {
+            "title": "Técnico en Sistemas",
+            "institution": "Servicio Nacional de Aprendizaje - SENA",
+            "time": "febrero 2019 – noviembre 2020",
+            "altImgInstitution": "Logo del Servicio Nacional de Aprendizaje SENA",
+            "altImgTitle": "Ilustración alusiva a sistemas informáticos"
+        }
     }
+
 }
