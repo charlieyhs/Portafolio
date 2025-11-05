@@ -185,10 +185,8 @@ body.dark .social-link {
         padding: 130px 40px 60px;
         min-height: auto;
     }
-    
-    .avatar {
-        width: 140px;
-        height: 140px;
+    .hero-avatar-container{
+        display: none;
     }
     
     .hero-cta {
