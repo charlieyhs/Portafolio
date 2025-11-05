@@ -61,3 +61,43 @@ body.dark .btn-contact:hover {
     color: var(--bg-dark);
     box-shadow: 0 10px 30px rgba(163, 177, 138, 0.3);
 }
+
+@media (max-width: 1024px) {
+    .contact-links {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .btn-contact {
+        justify-content: flex-start;
+        padding: 12px 20px;
+    }
+    
+    .contact-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: clamp(32px, 8vw, 48px);
+    }
+    
+    .contact-subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    
+    .btn-contact img {
+        width: 24px;
+        height: 24px;
+    }
+}

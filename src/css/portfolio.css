@@ -95,66 +95,41 @@ body.dark footer {
 }
 
 @media (max-width: 768px) {
-    nav, .hero-section, .projects-section, .skills-section, .contact-section, .experience-section {
-        padding-left: 30px;
-        padding-right: 30px;
+    .section-header {
+        margin-bottom: 60px;
     }
-
-    .hero-avatar {
-        width: 100px;
-        height: 100px;
+    
+    .section-title {
+        font-size: clamp(28px, 6vw, 40px);
     }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
+    
+    .section-label {
+        font-size: 14px;
     }
-
-    .skills-container {
-        grid-template-columns: 1fr;
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
     }
+}
 
-    .hero-cta {
-        flex-direction: column;
-        width: 100%;
+@media (max-width: 480px) {
+    .section-header {
+        margin-bottom: 40px;
     }
-
-    .cta-btn {
-        width: 100%;
-        text-align: center;
+    
+    .section-title {
+        font-size: clamp(24px, 7vw, 36px);
     }
-
-    .contact-links {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .contact-btn {
-        width: 100%;
-    }
-
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-item {
-        flex-direction: column !important;
-        padding-left: 50px;
-    }
-
-    .timeline-content {
-        width: 100% !important;
-        margin: 0 !important;
-    }
-
-    .timeline-dot {
-        left: 20px;
-    }
-
-    .nav-menu {
-        gap: 20px;
-    }
-
-    .nav-item {
-        font-size: 12px;
+    
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
     }
 }

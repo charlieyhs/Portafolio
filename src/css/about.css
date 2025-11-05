@@ -57,3 +57,50 @@ body.dark .about-image img {
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 
 }
+
+@media (max-width: 1024px) {
+    .about-content {
+        gap: 40px;
+    }
+    
+    .about-text h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .about-text h2 {
+        font-size: 32px;
+    }
+    
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .about-image img {
+        height: 400px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 28px;
+    }
+    
+    .about-image img {
+        height: 300px;
+    }
+    
+    .card {
+        padding: 20px;
+    }
+}
