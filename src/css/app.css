@@ -15,14 +15,3 @@ body {
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-section {
-  scroll-margin-top: 80px;
-}
-
-header {
-  height: var(--header-height);
-}
-
-main {
-  padding-top: var(--header-height);
-}

@@ -17,7 +17,7 @@ const HeroSection = () => {
     const typewriters = Array.from({ length: 4 }, (_, i) => t(`hero.skill${i + 1}`));
     
     return (
-        <section id="hero" className="hero-section" aria-labelledby="hero-title">
+        <section id="hero" className="section section-light hero-section" aria-labelledby="hero-title">
             <div className="hero-content">
                 <div className="hero-avatar-container">
                     <img 

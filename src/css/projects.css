@@ -77,14 +77,13 @@ body.dark .project-link:hover {
     justify-content: center;
     object-fit: cover;
 }
-body.dark .project-image::after {
+body.dark .project-image::after img {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(163, 177, 138, 0.05);
     pointer-events: none;
     border-radius: 12px;
 }
