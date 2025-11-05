@@ -190,6 +190,10 @@ body.dark .social-link {
         width: 140px;
         height: 140px;
     }
+
+    .hero-avatar-container{
+        display: none;
+    }
     
     .hero-cta {
         flex-direction: column;
