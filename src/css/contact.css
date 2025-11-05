@@ -51,8 +51,7 @@
 }
 
 body.dark .btn-contact {
-    background: var(--bg-card-dark);
-    border-color: rgba(163, 177, 138, 0.3);
+    background: var(--green);
 }
 
 body.dark .btn-contact:hover {
