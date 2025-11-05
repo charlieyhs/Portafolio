@@ -8,7 +8,7 @@ const ContactSection = () => {
     const {t} = useTranslation();
 
     return (
-        <section id="contact" className="section section-light">
+        <section id="contact" className="section section-light contact-section">
             <h2 className="contact-tile">{t('contact.we-talk')}</h2>
             <p className="contact-subtitle">
                 {t('contact.available')}

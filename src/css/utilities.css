@@ -6,14 +6,42 @@
     --light-bg: #FAFAFA;
     --white: #FFFFFF;
     --text-dark: #333333;
+    
+    /* Variables para tema claro */
     --bg-light: #FAFAFA;
     --bg-section-light: #FFFFFF;
     --text-light: #333333;
     --text-secondary-light: #5C6B73;
-    --bg-dark: #1E1E1E;
-    --bg-section-dark: #2A2A2A;
-    --border-dark: #444444;
-    --text-secondary-dark: #B0B0B0;
+    
+    /* Variables para tema oscuro */
+    --bg-dark: #0F1419;
+    --bg-section-dark: #1A1F26;
+    --bg-card-dark: #232930;
+    --border-dark: #2D3748;
+    --text-dark: #F7FAFC;
+    --text-secondary-dark: #A0AEC0;
+
+
+    /* Variables dinámicas que cambiarán con el tema */
+    --bg-page: var(--bg-light);
+    --text: var(--text-light);
+    --text-secondary: var(--text-secondary-light);
+    --bg-section: var(--bg-section-light);
+    --border: #E0E0E0;
+}
+
+body.dark {
+    --bg-page: var(--bg-dark);
+    --text: var(--text-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --bg-section: var(--bg-section-dark);
+    --border: var(--border-dark);
+}
+
+body.dark header {
+    background: rgba(15, 20, 25, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(163, 177, 138, 0.2);
 }
 
 .container {
@@ -47,17 +75,31 @@
 }
 
 .card {
-    background: var(--light-bg);
-    border: 1px solid #E0E0E0;
+    background: var(--bg-section);
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 25px;
     transition: all 0.3s ease;
+    color: var(--text);
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(92, 107, 115, 0.1);
     border-color: var(--green);
+}
+
+body.dark .card {
+    background: var(--bg-card-dark);
+    border: 1px solid var(--border-dark);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .card:hover {
+    border-color: var(--green);
+    box-shadow: 0 8px 20px rgba(163, 177, 138, 0.15),
+                0 0 0 1px rgba(163, 177, 138, 0.1);
+    transform: translateY(-5px);
 }
 
 .btn {
@@ -80,22 +122,52 @@
     color: #FAFAFA;
 }
 
+body.dark .btn-primary {
+    background: var(--green);
+    box-shadow: 0 4px 12px rgba(163, 177, 138, 0.3);
+}
+
+body.dark .btn-primary:hover {
+    background: #8a9877;
+    box-shadow: 0 6px 20px rgba(163, 177, 138, 0.5);
+}
+
 .btn-secondary {
     background: transparent;
     border: 2px solid var(--green);
-    color: var(--gray);
+    color: var(--text-secondary);
+}
+
+body.dark .btn-secondary {
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: rgba(163, 177, 138, 0.05);
+}
+
+body.dark .btn-secondary:hover {
+    background: var(--green);
+    color: var(--bg-dark);
 }
 
 .section {
     padding: 120px 60px;
+    background: var(--bg-page);
 }
 
 .section-light {
-    background: #FFFFFF;
+    background: var(--bg-section-light);
+}
+
+body.dark .section-light {
+    background: var(--bg-section-dark);
 }
 
 .section-gray {
-    background: #FAFAFA;
+    background: var(--bg-light);
+}
+
+body.dark .section-gray {
+    background: var(--bg-dark);
 }
 
 .section-header {
@@ -118,19 +190,29 @@
 .section-title {
     font-size: clamp(36px, 5vw, 56px);
     font-weight: 300;
-    color: #333333;
+    color: var(--text);
     letter-spacing: -1px;
+}
+
+body.dark .section-title {
+    color: var(--text);
 }
 
 .badge {
     padding: 6px 14px;
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    background: var(--bg-section);
+    border: 1px solid var(--border);
     border-radius: 6px;
     font-size: 11px;
-    color: var(--gray);
+    color: var(--text-secondary);
     letter-spacing: 0.5px;
     font-weight: 500;
+}
+
+body.dark .badge {
+    background: rgba(163, 177, 138, 0.1);
+    border: 1px solid rgba(163, 177, 138, 0.3);
+    color: var(--text-dark);
 }
 
 .badge-learning {
@@ -179,4 +261,18 @@
     border-radius: 50%;
     object-fit: contain;
     box-shadow: 0 8px 32px rgba(163, 177, 138, 0.2);
+}
+
+body.dark .avatar {
+    box-shadow: 0 8px 32px rgba(163, 177, 138, 0.3),
+                0 0 60px rgba(163, 177, 138, 0.1);
+}
+
+body.dark .avatar:hover {
+    box-shadow: 0 12px 48px rgba(163, 177, 138, 0.4),
+                0 0 80px rgba(163, 177, 138, 0.2);
+}
+
+.card, .btn, header {
+    transition: all 0.3s ease;
 }

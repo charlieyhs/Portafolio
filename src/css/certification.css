@@ -56,7 +56,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: var(--text-dark);
+    color: var(--text);
 }
 
 .cert-issuer {
@@ -67,7 +67,7 @@
 }
 
 .cert-date {
-    color: var(--gray);
+    color: var(--text-secondary);
     font-size: 12px;
 }
 

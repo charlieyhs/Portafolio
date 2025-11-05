@@ -18,6 +18,15 @@
     transition: all 0.3s ease;
 }
 
+body.dark .skill-icon {
+    background: var(--bg-card-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .card:hover .skill-icon {
+    box-shadow: 0 6px 20px rgba(163, 177, 138, 0.2);
+}
+
 .card:hover .skill-icon {
     transform: scale(1.1);
 }
@@ -26,11 +35,11 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
-    color: #333333;
+    color: var(--text);
 }
 
 .skill-list {
-    color: #5C6B73;
+    color: var(--text-secondary);
     font-size: 14px;
     line-height: 1.8;
 }
@@ -39,7 +48,7 @@
     max-width: 1200px;
     margin: 60px auto 0;
     padding: 40px;
-    background: white;
+    background: var(--bg-section);
     border-radius: 12px;
     border: 2px dashed var(--green);
 }

@@ -10,6 +10,7 @@ export { default as tecnologoSoftware } from "./images/certification/tecnologo_s
 export { default as tecnicoSistemas } from "./images/certification/tecnico_sistemas.webp";
 export { default as sena } from "./images/certification/sena.webp";
 export { default as javeriana } from "./images/certification/javeriana.webp";
+export { default as javerianaDark } from "./images/certification/javeriana-dark.webp";
 export { default as diplomadoTesting } from "./images/certification/diplomado_testing.webp";
 export { default as diplomadoDesarrollo } from "./images/certification/diplomado_desarrollo.webp";
 

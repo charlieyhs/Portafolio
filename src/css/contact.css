@@ -1,20 +1,18 @@
 .contact-section {
-    padding: 150px 60px;
     text-align: center;
-    background: #FAFAFA;
 }
 
 .contact-title {
     font-size: clamp(40px, 6vw, 72px);
     font-weight: 300;
     margin-bottom: 30px;
-    color: #333333;
+    color: var(--text);
     letter-spacing: -1px;
 }
 
 .contact-subtitle {
     font-size: 18px;
-    color: #5C6B73;
+    color: var(--text-secondary);
     margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
@@ -29,25 +27,37 @@
     flex-wrap: wrap;
 }
 
-.btn-contact:hover {
-    background: #A3B18A;
-    border-color: #A3B18A;
-    color: #1B1B1B;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(163, 177, 138, 0.2);
-}
-
 .btn-contact {
     display: flex;
     align-items: center;
     gap: 20px;
     border: 1px solid var(--green);
-    color: var(--text-dark);
+    color: var(--text);
     letter-spacing: 0.5px;
+    background: var(--bg-section);
+}
+
+.btn-contact:hover {
+    background: var(--green);
+    border-color: var(--green);
+    color: #1B1B1B;
+    box-shadow: 0 10px 25px rgba(163, 177, 138, 0.2);
 }
 
 .btn-contact img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+body.dark .btn-contact {
+    background: var(--bg-card-dark);
+    border-color: rgba(163, 177, 138, 0.3);
+}
+
+body.dark .btn-contact:hover {
+    background: var(--green);
+    border-color: var(--green);
+    color: var(--bg-dark);
+    box-shadow: 0 10px 30px rgba(163, 177, 138, 0.3);
 }

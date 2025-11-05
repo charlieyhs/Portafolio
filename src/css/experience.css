@@ -11,7 +11,7 @@
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: #E0E0E0;
+  background: var(--border);
 }
 
 
@@ -48,17 +48,17 @@
   transform: translateX(-50%);
   width: 16px;
   height: 16px;
-  background: #A3B18A;
+  background: var(--green);
   border-radius: 50%;
-  border: 3px solid #FAFAFA;
-  box-shadow: 0 0 0 4px #E0E0E0;
+  border: 3px solid var(--bg-page);
+  box-shadow: 0 0 0 4px var(--border);
   z-index: 2;
 }
 
 .experience-date {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #A3B18A;
+  color: var(--green);
   margin-bottom: 12px;
   font-weight: 600;
 }
@@ -67,19 +67,19 @@
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #333333;
+  color: var(--text);
 }
 
 .experience-company {
   font-size: 15px;
-  color: #5C6B73;
+  color: var(--text-secondary);
   margin-bottom: 15px;
 }
 
 .experience-description {
   font-size: 14px;
   line-height: 1.7;
-  color: #5C6B73;
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 
@@ -87,6 +87,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+}
+
+body.dark .timeline::before {
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--green),
+        transparent
+    );
+}
+
+body.dark .timeline-dot {
+    background: var(--green);
+    border-color: var(--bg-dark);
+    box-shadow: 0 0 0 4px var(--border-dark),
+                0 0 20px rgba(163, 177, 138, 0.4);
 }
 
 @media (max-width: 768px) {

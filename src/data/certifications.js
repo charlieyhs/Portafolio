@@ -1,4 +1,11 @@
-import { diplomadoDesarrollo, diplomadoTesting, javeriana, sena, tecnicoSistemas, tecnologoSoftware, unad } from "../assets/images";
+import { diplomadoDesarrollo, 
+    diplomadoTesting, 
+    javeriana, 
+    javerianaDark, 
+    sena, 
+    tecnicoSistemas, 
+    tecnologoSoftware, 
+    unad } from "../assets/images";
 
 export const certifications = [
     {
@@ -6,7 +13,7 @@ export const certifications = [
         title: 'certification.certification1.title',
         institution: 'certification.certification1.institution',
         date: 'certification.certification1.time',
-        imgInstitution: unad,
+        imgInstitution: { light: unad, dark: unad },
         altImgInstitution: 'certification.certification1.altImgInstitution',
         imgTitle: tecnologoSoftware,
         altImgTitle: 'certification.certification1.altImgTitle',
@@ -16,7 +23,7 @@ export const certifications = [
         title: 'certification.certification2.title',
         institution: 'certification.certification2.institution',
         date: 'certification.certification2.time',
-        imgInstitution:  unad,
+        imgInstitution:  { light: unad, dark: unad },
         altImgInstitution: 'certification.certification2.altImgInstitution',
         imgTitle: diplomadoTesting,
         altImgTitle: 'certification.certification2.altImgTitle',
@@ -26,7 +33,7 @@ export const certifications = [
         title: 'certification.certification3.title',
         institution: 'certification.certification3.institution',
         date: 'certification.certification3.time',
-        imgInstitution:  javeriana,
+        imgInstitution:  { light: javeriana, dark: javerianaDark },
         altImgInstitution: 'certification.certification3.altImgInstitution',
         imgTitle: diplomadoDesarrollo,
         altImgTitle: 'certification.certification3.altImgTitle',
@@ -36,7 +43,7 @@ export const certifications = [
         title: 'certification.certification4.title',
         institution: 'certification.certification4.institution',
         date: 'certification.certification4.time',
-        imgInstitution:  sena,
+        imgInstitution: {light: sena, dark: sena},
         altImgInstitution: 'certification.certification4.altImgInstitution',
         imgTitle: tecnicoSistemas,
         altImgTitle: 'certification.certification4.altImgTitle',

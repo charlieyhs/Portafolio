@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
-import { certifications } from "../../data/certifications";
 import { useState } from "react";
 import '../../css/certification.css'
+import { useTheme } from "../../hooks/useTheme";
+import { certifications } from "../../data/certifications";
 
 const CertificationsSections = () => {
     
     const {t} = useTranslation();
     const [imageErrors, setImageErrors] = useState({});
-
+    const {theme} = useTheme();
     const handleImageError = (certId, imageType) => {
         setImageErrors(prev => ({
             ...prev,
@@ -30,6 +31,7 @@ const CertificationsSections = () => {
                     const hasInstitution = cert.imgInstitution && !imageErrors[`${cert.id}-institution`];
                     const hasTitle = cert.imgTitle && !imageErrors[`${cert.id}-title`];
                     const imageCount = (hasInstitution ? 1 : 0) + (hasTitle ? 1 : 0);
+                    const imgInstitution = cert.imgInstitution?.[theme];
 
                     return (
                         <div key={cert.id} className="card">
@@ -37,7 +39,7 @@ const CertificationsSections = () => {
                                 {hasInstitution && (
                                     <div className="cert-icon_image-wrapper">
                                         <img 
-                                            src={cert.imgInstitution} 
+                                            src={imgInstitution} 
                                             alt={t(cert.altImgInstitution)}
                                             loading="lazy"
                                             onError={() => handleImageError(cert.id, 'institution')}

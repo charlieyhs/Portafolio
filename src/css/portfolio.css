@@ -25,11 +25,17 @@
 footer {
     padding: 50px;
     text-align: center;
-    color: #5C6B73;
+    color: var(--text-secondary);
     font-size: 12px;
     letter-spacing: 1px;
-    border-top: 1px solid #E0E0E0;
-    background: #FFFFFF;
+    border-top: 1px solid var(--border);
+    background: var(--bg-section);
+}
+
+body.dark footer {
+    background: var(--bg-dark);
+    border-top: 1px solid var(--border-dark);
+    color: var(--text-secondary-dark);
 }
 
 .back-to-top {

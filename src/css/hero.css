@@ -36,7 +36,7 @@
     font-size: clamp(40px, 6vw, 72px);
     font-weight: 300;
     line-height: 1.1;
-    color: #2C3333;
+    color: var(--text);
     animation: fadeInUp 0.8s ease 0.1s backwards;
     letter-spacing: -1.5px;
     margin: 0;
@@ -44,26 +44,26 @@
 
 .hero-title-highlight {
     font-weight: 600;
-    color: var(--verde);
+    color: var(--green);
     display: inline-block;
 }
+
 .typewriter {
     font-size: 24px;
-    color: var(--gray);
+    color: var(--text-secondary);
     margin-bottom: 20px;
     height: 40px;
 }
+
 .hero-subtitle {
     font-size: clamp(16px, 2vw, 18px);
-    color: var(--gray);
+    color: var(--text-secondary);
     max-width: 540px;
     line-height: 1.7;
     font-weight: 400;
     animation: fadeInUp 0.8s ease 0.2s backwards;
     margin: 0;
 }
-
-
 
 .avatar:hover {
     transform: scale(1.05) rotate(2deg);
@@ -72,7 +72,7 @@
 
 .hero-role {
     font-size: 1rem;
-    color: #7A8C8E;
+    color: var(--text-secondary);
     letter-spacing: 1px;
     text-transform: uppercase;
     animation: fadeInUp 0.8s ease 0.15s backwards;
@@ -84,6 +84,7 @@
     margin-bottom: 30px;
     justify-content: center;
 }
+
 .social-link {
     width: 40px;
     height: 40px;
@@ -102,6 +103,10 @@
 .social-link:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(163, 177, 138, 0.3);
+}
+
+body.dark .social-link {
+    background: var(--green);
 }
 
 
