@@ -25,7 +25,7 @@ Este portafolio refleja mi trayectoria, mis habilidades técnicas y algunos de l
 
 ## 🧠 Sobre mí
 
-Soy un **desarrollador de software** con mas de 3 años de experiencia, enfocado en la creación de aplicaciones eficientes, escalables y con buena experiencia de usuario.  
+Soy un **desarrollador de software** con más de 4 años de experiencia, enfocado en la creación de aplicaciones eficientes, escalables y con buena experiencia de usuario.  
 Me motiva aprender, mejorar continuamente y aportar soluciones que generen impacto real.
 
 - 💼 **Stack principal:** Java, Spring Boot, React, SQL.  
