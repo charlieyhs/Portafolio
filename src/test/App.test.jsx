@@ -23,7 +23,7 @@ describe('App', () => {
 
     it('muestra el formato de las descripciones como HTML', () => {
         const { container } = render(<App />);
-        expect(container.querySelectorAll('.experience-description ul > li')).toHaveLength(8);
+        expect(container.querySelectorAll('.experience-description ul > li')).toHaveLength(10);
         expect(container.querySelector('.experience-description strong')).toBeTruthy();
         expect(container.textContent).not.toMatch(/<\/?(ul|li|strong)>/);
     });
