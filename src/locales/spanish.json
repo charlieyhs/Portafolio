@@ -13,7 +13,7 @@
     "language-selector": {
         "language": "IDIOMA",
         "spanish": "Español",
-        "english": "Ingles",
+        "english": "Inglés",
         "change-language": "Botón para cambiar de idioma"
     },
     "hero": {
@@ -91,6 +91,12 @@
             "alt-icon" : "Herramientas",
             "title" : "Herramientas"
         },
+        "soft": {
+            "leadership": "Liderazgo",
+            "communication": "Comunicación",
+            "teamwork": "Trabajo en equipo",
+            "problem-solving": "Resolución de problemas"
+        },
         "learning": "Actualmente aprendiendo",
         "learning1": "Inglés",
         "learning2": "JUnit",
@@ -106,10 +112,11 @@
         "github" : "Github",
         "alt-github" : "Github",
         "whatsapp": "WhatsApp",
-        "alt-whatsapp" : "WhatsApp"
+        "alt-whatsapp" : "WhatsApp",
+        "whatsapp-message": "Hola Carlos, vi tu portafolio y me gustaría hablar sobre una vacante."
     },
     "footer" : {
-        "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
+        "description" : "© {{year}} Carlos Hernández — Todos los derechos reservados."
     },
     "theme": {
         "alt" : "Botón de cambio de tema oscuro o claro"

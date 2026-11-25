@@ -20,7 +20,7 @@ const TypeWriter = ({texts, speed = 100, pause = 1000}) => {
         }
 
         // Texto completo, esperar antes de borrar
-        if(!deleting && subIndex === currentText.length){
+        if(!deleting && subIndex >= currentText.length){
             const timeout = setTimeout(() => setDeleting(true), pause);
             return () => clearTimeout(timeout);
         }

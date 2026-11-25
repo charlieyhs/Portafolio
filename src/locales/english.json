@@ -46,7 +46,7 @@
 		"moto-viewer": "Moto 360°",
 		"moto-viewer-description": "The <strong>Interactive 360° Viewer</strong> is a web application that allows users to view objects from every angle through preloaded images. It provides a smooth and intuitive experience with rotation, zoom, and navigation controls for both PC and mobile devices, combining modern design and high visual performance.",
 		"gym-alt-img" : "Main background of the gym project",
-		"savingsfund-alt-img": "Main fund of the savings fund project",
+		"savingsfund-alt-img": "Main background of the savings fund project",
         "motoviewer-alt-img": "Main background of the Moto 360 project",
 		"see-more": "See more projects on GitHub"
 	},
@@ -91,7 +91,13 @@
             "alt-icon" : "Tools",
             "title" : "Tools"
         },
-		"learning": "Currently learning",
+		"soft": {
+            "leadership": "Leadership",
+            "communication": "Communication",
+            "teamwork": "Teamwork",
+            "problem-solving": "Problem solving"
+        },
+        "learning": "Currently learning",
 		"learning1": "English",
         "learning2": "JUnit",
         "learning3": "Golang"
@@ -104,10 +110,13 @@
 		"linkedin": "LinkedIn",
 		"alt-linkedin": "LinkedIn",
 		"github": "GitHub",
-		"alt-github": "GitHub"
+		"alt-github": "GitHub",
+		"whatsapp": "WhatsApp",
+		"alt-whatsapp": "WhatsApp",
+		"whatsapp-message": "Hi Carlos, I saw your portfolio and would like to talk about a job opportunity."
 	},
 	"footer": {
-		"description": "© 2025 Carlos Hernández — All rights reserved."
+		"description": "© {{year}} Carlos Hernández — All rights reserved."
 	},
     "theme": {
         "alt" : "Dark or light theme toggle button"

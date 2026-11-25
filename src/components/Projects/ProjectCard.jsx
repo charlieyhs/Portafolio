@@ -9,8 +9,8 @@ const ProjectCard = ({project}) => {
         <div className="card">
             <div className="project-image">
                 <img src={project.img} 
-                    alt={project.altImg}
-                    aria-label={project.altImg}
+                    alt={t(project.altImg)}
+                    loading="lazy"
                 />
             </div>
             <div className="project-number">{project.id}</div>
@@ -57,8 +57,8 @@ const projectPropType = PropTypes.shape({
     description: PropTypes.string.isRequired,
     skills: PropTypes.arrayOf(skillPropType).isRequired,
     link: PropTypes.string.isRequired,
-    frontend: PropTypes.string.isRequired,
-    backend: PropTypes.string.isRequired,
+    frontend: PropTypes.string,
+    backend: PropTypes.string,
     altImg: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
 });

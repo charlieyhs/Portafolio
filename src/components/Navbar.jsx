@@ -5,7 +5,7 @@ import "../css/nav-bar.css";
 import LanguageSelector from "./LanguageSelector";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../hooks/useTheme";
-import { urlWhatsApp } from "../data/personal";
+import { getWhatsAppUrl } from "../data/personal";
 
 const Navbar = () => {
     const { t } = useTranslation();
@@ -82,7 +82,7 @@ const Navbar = () => {
                     <ThemeToggle />
 
                     <a
-                        href={urlWhatsApp}
+                        href={getWhatsAppUrl(t("contact.whatsapp-message"))}
                         target="_blank"
                         className="button-theme"
                     >

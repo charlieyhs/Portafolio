@@ -12,15 +12,12 @@ const LANGUAGES = [
 const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isInitialized, setIsInitialized] = useState(false);
   const menuRef = useRef(null);
 
   const setLanguage = useCallback(
     async (lng) => {
       try {
         await i18n.changeLanguage(lng);
-        document.body.dir = i18n.dir(lng);
-        localStorage.setItem("selectedLanguage", lng);
       } catch (error) {
         console.error("Error changing language:", error);
       }
@@ -28,18 +25,13 @@ const LanguageSelector = () => {
     [i18n]
   );
 
-  useEffect(() => {
-    const saved = localStorage.getItem("selectedLanguage") || "es";
-    setLanguage(saved).finally(() => setIsInitialized(true));
-  }, [setLanguage]);
-
   const languages = useMemo(
     () => LANGUAGES.map((lang) => ({...lang, name: t(lang.labelKey), }))
   ,[t]);
 
   const currentLanguage = useMemo(
-    () => languages.find((l) => l.code === i18n.language) || languages[0],
-    [i18n.language, languages]
+    () => languages.find((l) => l.code === i18n.resolvedLanguage) || languages[0],
+    [i18n.resolvedLanguage, languages]
   );
 
   const handleChangeLanguage = useCallback(
@@ -60,8 +52,6 @@ const LanguageSelector = () => {
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
-
-  if (!isInitialized) return null;
 
   return (
     <div className="language-selector" ref={menuRef}>
@@ -107,7 +97,7 @@ const LanguageSelector = () => {
             <LanguageOption
               key={lang.code}
               lang={lang}
-              isActive={i18n.language === lang.code}
+              isActive={i18n.resolvedLanguage === lang.code}
               onSelect={handleChangeLanguage}
             />
           ))}
