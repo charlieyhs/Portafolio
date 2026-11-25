@@ -58,7 +58,7 @@
 .experience-date {
   font-size: 12px;
   letter-spacing: 1px;
-  color: var(--green);
+  color: var(--accent-text);
   margin-bottom: 12px;
   font-weight: 600;
 }

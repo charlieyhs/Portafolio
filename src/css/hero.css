@@ -40,7 +40,7 @@
 
 .hero-title-highlight {
     font-weight: 600;
-    color: var(--green);
+    color: var(--accent-text);
     display: inline-block;
 }
 
@@ -86,7 +86,7 @@
     height: 40px;
     border-radius: 50%;
     background: transparent;
-    border: 2px solid var(--verde);
+    border: 2px solid var(--green);
     color: white;
     display: flex;
     align-items: center;

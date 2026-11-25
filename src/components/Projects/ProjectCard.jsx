@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import '../../css/projects.css'
 import { useTranslation } from "react-i18next";
 import Badge from "../Badge";
+import RichText from "../RichText";
 
 const ProjectCard = ({project}) => {
     const {t} = useTranslation();
@@ -9,15 +10,13 @@ const ProjectCard = ({project}) => {
         <div className="card">
             <div className="project-image">
                 <img src={project.img} 
-                    alt={project.altImg}
-                    aria-label={project.altImg}
+                    alt={t(project.altImg)}
+                    loading="lazy"
                 />
             </div>
             <div className="project-number">{project.id}</div>
             <h3 className="project-title">{t(project.name)}</h3>
-            <p className="project-description"
-                dangerouslySetInnerHTML={{ __html: t(project.description) }}>
-            </p>
+            <RichText className="project-description" i18nKey={project.description} />
             <div className="project-tech">
                 {project.skills.map(skill => (
                     <Badge key={skill.id} name={skill.name} />
@@ -57,8 +56,8 @@ const projectPropType = PropTypes.shape({
     description: PropTypes.string.isRequired,
     skills: PropTypes.arrayOf(skillPropType).isRequired,
     link: PropTypes.string.isRequired,
-    frontend: PropTypes.string.isRequired,
-    backend: PropTypes.string.isRequired,
+    frontend: PropTypes.string,
+    backend: PropTypes.string,
     altImg: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
 });

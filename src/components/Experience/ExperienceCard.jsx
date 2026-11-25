@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import Badge from "../Badge";
+import RichText from "../RichText";
 import '../../css/experience.css';
 import { useTranslation } from "react-i18next";
 
@@ -14,9 +15,7 @@ const ExperienceCard = ({experience}) => {
                 <h3 className="experience-title">{t(experience.position)}</h3>
                 <div className="experience-company">{experience.company}</div>
 
-                <p className="experience-description"
-                    dangerouslySetInnerHTML={{ __html: t(experience.description) }}>
-                </p>
+                <RichText className="experience-description" i18nKey={experience.description} />
 
                 <div className="experience-tags">
                     {experience.skills.map(skill => (

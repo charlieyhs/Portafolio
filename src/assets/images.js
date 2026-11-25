@@ -17,6 +17,7 @@ export { default as diplomadoDesarrollo } from "./images/certification/diplomado
 // project images
 export { default as savingsFund } from "./images/project/savings_fund.webp";
 export { default as motoViewer } from "./images/project/moto_viewer.webp";
+export { default as rinconesBoyaca } from "./images/project/rincones_boyaca.webp";
 export { default as gym } from "./images/project/gym.webp";
 
 // skills images

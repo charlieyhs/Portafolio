@@ -1,5 +1,4 @@
 import Portfolio from "./components/Portfolio";
-import { LanguageProvider } from "./providers/LanguageProvider";
 import './css/utilities.css'
 import './css/app.css'
 import ThemeProvider from "./providers/ThemeProvider";
@@ -7,9 +6,7 @@ import ThemeProvider from "./providers/ThemeProvider";
 function App() {
   return (
     <ThemeProvider>
-      <LanguageProvider>
-        <Portfolio />
-      </LanguageProvider>
+      <Portfolio />
     </ThemeProvider>
   )
 }

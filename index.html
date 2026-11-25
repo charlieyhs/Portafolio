@@ -1,13 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Carlos Hernández, software developer specialized in efficient and scalable solutions." />
-    <title>Carlos Hernández - Portafolio</title>
+    <meta name="description" content="Portafolio de Carlos Hernández, desarrollador Full Stack especializado en Java, Spring y React." />
+    <link rel="canonical" href="https://charlieyhs.github.io/Portafolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://charlieyhs.github.io/Portafolio/" />
+    <meta property="og:title" content="Carlos Hernández - Desarrollador Full Stack" />
+    <meta property="og:description" content="Portafolio de Carlos Hernández, desarrollador Full Stack especializado en Java, Spring y React." />
+    <meta property="og:image" content="https://charlieyhs.github.io/Portafolio/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_CO" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Carlos Hernández",
+        "jobTitle": "Desarrollador Full Stack",
+        "url": "https://charlieyhs.github.io/Portafolio/",
+        "sameAs": ["https://www.linkedin.com/in/carlosyhs", "https://github.com/charlieyhs"],
+        "knowsAbout": ["Java", "Spring Boot", "React", "SQL"]
+      }
+    </script>
+    <title>Carlos Hernández - Desarrollador Full Stack</title>
   </head>
   <body>
+    <script>
+      // Aplica el tema antes del primer pintado (ver src/utils/initialTheme.js)
+      document.body.className = localStorage.getItem('theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

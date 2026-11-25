@@ -4,7 +4,7 @@ import { CV_EN, CV_ES } from "../../assets/docs";
 const DownloadCV = () => {
     const {i18n, t} = useTranslation();
 
-    const lang = i18n.language;
+    const lang = i18n.resolvedLanguage;
     const file = lang === "es" ? CV_ES : CV_EN ;
     
     return (

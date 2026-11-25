@@ -4,7 +4,7 @@ const Footer = () => {
     const {t} = useTranslation();
     return (
         <footer>
-            {t('footer.description')}
+            {t('footer.description', { year: new Date().getFullYear() })}
         </footer>
     );
 }

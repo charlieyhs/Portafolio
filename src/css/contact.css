@@ -52,6 +52,7 @@
 
 body.dark .btn-contact {
     background: var(--green);
+    color: var(--on-green);
 }
 
 body.dark .btn-contact:hover {

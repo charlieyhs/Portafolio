@@ -13,7 +13,7 @@ const SkillCard = ({skill}) => {
             <h3 className="skill-title">{t(skill.title)}</h3>
 
             <p className="skill-list">
-                {skill.skills.map(s => s )}
+                {skill.skills.map(s => skill.translatable ? t(s) : s).join(' · ')}
             </p>
         </div>
     );
@@ -24,6 +24,7 @@ SkillCard.propTypes = {
         icon : PropTypes.string.isRequired,
         altIcon : PropTypes.string.isRequired,
         title : PropTypes.string.isRequired,
+        translatable : PropTypes.bool,
         skills : PropTypes.arrayOf(PropTypes.string).isRequired
     })
 };

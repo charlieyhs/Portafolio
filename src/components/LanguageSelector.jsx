@@ -12,15 +12,12 @@ const LANGUAGES = [
 const LanguageSelector = () => {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isInitialized, setIsInitialized] = useState(false);
   const menuRef = useRef(null);
 
   const setLanguage = useCallback(
     async (lng) => {
       try {
         await i18n.changeLanguage(lng);
-        document.body.dir = i18n.dir(lng);
-        localStorage.setItem("selectedLanguage", lng);
       } catch (error) {
         console.error("Error changing language:", error);
       }
@@ -28,18 +25,13 @@ const LanguageSelector = () => {
     [i18n]
   );
 
-  useEffect(() => {
-    const saved = localStorage.getItem("selectedLanguage") || "es";
-    setLanguage(saved).finally(() => setIsInitialized(true));
-  }, [setLanguage]);
-
   const languages = useMemo(
     () => LANGUAGES.map((lang) => ({...lang, name: t(lang.labelKey), }))
   ,[t]);
 
   const currentLanguage = useMemo(
-    () => languages.find((l) => l.code === i18n.language) || languages[0],
-    [i18n.language, languages]
+    () => languages.find((l) => l.code === i18n.resolvedLanguage) || languages[0],
+    [i18n.resolvedLanguage, languages]
   );
 
   const handleChangeLanguage = useCallback(
@@ -50,25 +42,29 @@ const LanguageSelector = () => {
     [setLanguage]
   );
 
-  // Cerrar menú al hacer clic fuera
+  // Cerrar menú al hacer clic fuera o presionar Escape
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
         setMenuOpen(false);
       }
     };
+    const handleEscape = (e) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
     document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
   }, []);
-
-  if (!isInitialized) return null;
 
   return (
     <div className="language-selector" ref={menuRef}>
       <button
         className="language-button"
         onClick={() => setMenuOpen((prev) => !prev)}
-        aria-haspopup="menu"
         aria-expanded={menuOpen}
         aria-label={t("language-selector.change-language")}
       >
@@ -107,7 +103,7 @@ const LanguageSelector = () => {
             <LanguageOption
               key={lang.code}
               lang={lang}
-              isActive={i18n.language === lang.code}
+              isActive={i18n.resolvedLanguage === lang.code}
               onSelect={handleChangeLanguage}
             />
           ))}

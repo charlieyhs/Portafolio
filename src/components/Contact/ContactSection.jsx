@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { email, github, linkedin, whatsapp } from "../../assets/images";
 import '../../css/contact.css'
-import { urlWhatsApp } from "../../data/personal";
+import { getWhatsAppUrl } from "../../data/personal";
 
 const ContactSection = () => {
     
@@ -9,7 +9,7 @@ const ContactSection = () => {
 
     return (
         <section id="contact" className="section section-light contact-section">
-            <h2 className="contact-tile">{t('contact.we-talk')}</h2>
+            <h2 className="contact-title">{t('contact.we-talk')}</h2>
             <p className="contact-subtitle">
                 {t('contact.available')}
             </p>
@@ -35,7 +35,7 @@ const ContactSection = () => {
                     {t('contact.github')}
                 </a>
 
-                <a href={urlWhatsApp}
+                <a href={getWhatsAppUrl(t('contact.whatsapp-message'))}
                     target="_blank"
                     className="btn btn-contact">
                     <img src={whatsapp} alt={t('contact.alt-whatsapp')}></img>

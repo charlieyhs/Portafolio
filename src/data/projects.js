@@ -1,4 +1,4 @@
-import { gym, motoViewer, savingsFund } from "../assets/images";
+import { gym, motoViewer, rinconesBoyaca, savingsFund } from "../assets/images";
 
 export const projects = [
     {
@@ -18,7 +18,7 @@ export const projects = [
         link: "https://charlieyhs.github.io/Valhalla-Gym",
         frontend: "https://github.com/charlieyhs/Valhalla-Gym",
         img: gym,
-        altImg: "project.gym-alt-img"
+        altImg: "projects.gym-alt-img"
     },
     {
         id: "02",
@@ -43,7 +43,7 @@ export const projects = [
         frontend: "https://github.com/charlieyhs/fondo_ahorro_frontend",
         backend: "https://github.com/charlieyhs/fondo_ahorro_backend",
         img: savingsFund,
-        altImg: "project.savingsfund-alt-img"
+        altImg: "projects.savingsfund-alt-img"
     },
     {
         id: "03",
@@ -58,6 +58,22 @@ export const projects = [
         link: "https://charlieyhs.github.io/moto-viewer",
         frontend: "https://github.com/charlieyhs/moto-viewer",
         img: motoViewer,
-        altImg: "project.motoviewer-alt-img"
+        altImg: "projects.motoviewer-alt-img"
+    },
+    {
+        id: "04",
+        name: "projects.rincones-boyaca",
+        description: "projects.rincones-boyaca-description",
+        skills: [
+            {id: "1", name: "React"},
+            {id: "2", name: "Leaflet"},
+            {id: "3", name: "MUI"},
+            {id: "4", name: "JavaScript"},
+            {id: "5", name: "Vite"},
+        ],
+        link: "https://charlieyhs.github.io/rincones_boyaca/",
+        frontend: "https://github.com/charlieyhs/rincones_boyaca",
+        img: rinconesBoyaca,
+        altImg: "projects.rincones-boyaca-alt-img"
     },
 ]
