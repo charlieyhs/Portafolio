@@ -1,4 +1,4 @@
-import { gym, motoViewer, savingsFund } from "../assets/images";
+import { gym, motoViewer, rinconesBoyaca, savingsFund } from "../assets/images";
 
 export const projects = [
     {
@@ -59,5 +59,21 @@ export const projects = [
         frontend: "https://github.com/charlieyhs/moto-viewer",
         img: motoViewer,
         altImg: "projects.motoviewer-alt-img"
+    },
+    {
+        id: "04",
+        name: "projects.rincones-boyaca",
+        description: "projects.rincones-boyaca-description",
+        skills: [
+            {id: "1", name: "React"},
+            {id: "2", name: "Leaflet"},
+            {id: "3", name: "MUI"},
+            {id: "4", name: "JavaScript"},
+            {id: "5", name: "Vite"},
+        ],
+        link: "https://charlieyhs.github.io/rincones_boyaca/",
+        frontend: "https://github.com/charlieyhs/rincones_boyaca",
+        img: rinconesBoyaca,
+        altImg: "projects.rincones-boyaca-alt-img"
     },
 ]

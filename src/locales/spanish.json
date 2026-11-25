@@ -49,6 +49,9 @@
         "gym-alt-img": "Fondo principal del proyecto de gimnasio",
         "savingsfund-alt-img": "Fondo principal del proyecto de fondo de ahorro",
         "motoviewer-alt-img": "Fondo principal del proyecto de moto 360",
+        "rincones-boyaca": "Rincones Boyacá",
+        "rincones-boyaca-description": "<strong>Rincones Boyacá</strong> es una aplicación web en desarrollo para descubrir <strong>sitios turísticos de Boyacá</strong> en un mapa interactivo. Permite buscar y filtrar lugares por categoría, alternar entre mapa y lista, ver la información de cada sitio y ubicarse en el mapa.",
+        "rincones-boyaca-alt-img": "Mapa interactivo del proyecto Rincones Boyacá",
         "see-more": "Ver más proyectos en Github"
     },
     "experience": {
