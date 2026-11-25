@@ -42,15 +42,22 @@ const LanguageSelector = () => {
     [setLanguage]
   );
 
-  // Cerrar menú al hacer clic fuera
+  // Cerrar menú al hacer clic fuera o presionar Escape
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
         setMenuOpen(false);
       }
     };
+    const handleEscape = (e) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
     document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
   }, []);
 
   return (
@@ -58,7 +65,6 @@ const LanguageSelector = () => {
       <button
         className="language-button"
         onClick={() => setMenuOpen((prev) => !prev)}
-        aria-haspopup="menu"
         aria-expanded={menuOpen}
         aria-label={t("language-selector.change-language")}
       >

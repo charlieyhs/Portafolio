@@ -5,6 +5,7 @@ import "../css/nav-bar.css";
 import LanguageSelector from "./LanguageSelector";
 import ThemeToggle from "./ThemeToggle";
 import { useTheme } from "../hooks/useTheme";
+import { scrollBehavior } from "../utils/scroll";
 import { getWhatsAppUrl } from "../data/personal";
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
 
         if (element) {
             const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
-            window.scrollTo({ top: y, behavior: "smooth" });
+            window.scrollTo({ top: y, behavior: scrollBehavior() });
         }
     };
 
@@ -54,6 +55,8 @@ const Navbar = () => {
                 <button
                     className="menu-toggle"
                     onClick={() => setMenuOpen(!menuOpen)}
+                    aria-expanded={menuOpen}
+                    aria-controls="main-menu"
                     aria-label={
                         menuOpen
                             ? t("navbar.close-menu")
@@ -64,7 +67,7 @@ const Navbar = () => {
                 </button>
 
                 {/* Menú principal */}
-                <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
+                <ul id="main-menu" className={`nav-menu ${menuOpen ? "open" : ""}`}>
                     {menus.map((menu) => (
                         <li key={menu.id}>
                             <button
@@ -78,19 +81,21 @@ const Navbar = () => {
                             </button>
                         </li>
                     ))}
-                    <LanguageSelector />
-                    <ThemeToggle />
+                    <li><LanguageSelector /></li>
+                    <li><ThemeToggle /></li>
 
-                    <a
-                        href={getWhatsAppUrl(t("contact.whatsapp-message"))}
-                        target="_blank"
-                        className="button-theme"
-                    >
-                        <img
-                            src={whatsapp}
-                            alt={t("contact.alt-whatsapp")}
-                        ></img>
-                    </a>
+                    <li>
+                        <a
+                            href={getWhatsAppUrl(t("contact.whatsapp-message"))}
+                            target="_blank"
+                            className="button-theme"
+                        >
+                            <img
+                                src={whatsapp}
+                                alt={t("contact.alt-whatsapp")}
+                            />
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

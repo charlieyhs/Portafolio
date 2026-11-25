@@ -3,6 +3,7 @@ import { avatar } from "../../assets/images";
 import '../../css/hero.css'
 import TypeWriter from "./TypeWriter";
 import { socialMedia } from "../../data/hero";
+import { scrollBehavior } from "../../utils/scroll";
 import DownloadCV from "./DownloadCV";
 
 const HeroSection = () => {
@@ -11,7 +12,7 @@ const HeroSection = () => {
     const handleScroll = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            element.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
         }
     };
     const typewriters = Array.from({ length: 4 }, (_, i) => t(`hero.skill${i + 1}`));

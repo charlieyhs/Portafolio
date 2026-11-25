@@ -58,7 +58,7 @@ body.dark .nav-item {
 }
 
 .nav-item:hover {
-	color: var(--green);
+	color: var(--accent-text);
 }
 
 .nav-item::after {
@@ -80,7 +80,6 @@ body.dark .nav-item {
 .menu-toggle {
   background: none;
   border: none;
-  outline: none;
   cursor: pointer;
   width: 40px;
   height: 40px;

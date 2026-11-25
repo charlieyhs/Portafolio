@@ -1,5 +1,7 @@
 :root {
     --green: #A3B18A;
+    --on-green: #1B1B1B;
+    --accent-text: #55633D;
     --gray: #5C6B73;
     --dark-bg: #1a1a1a;
     --dark-card: #2a2a2a;
@@ -36,6 +38,7 @@
 }
 
 body.dark {
+    --accent-text: var(--green);
     --bg-page: var(--bg-dark);
     --text: var(--text-dark);
     --text-secondary: var(--text-secondary-dark);
@@ -124,7 +127,7 @@ body.dark .card:hover {
 
 .btn-primary {
     background: var(--green);
-    color: #FAFAFA;
+    color: var(--on-green);
 }
 
 body.dark .btn-primary {
@@ -145,7 +148,7 @@ body.dark .btn-primary:hover {
 
 body.dark .btn-secondary {
     border: 2px solid var(--green);
-    color: var(--green);
+    color: var(--accent-text);
     background: rgba(163, 177, 138, 0.05);
 }
 
@@ -186,7 +189,7 @@ body.dark .section-gray {
 .section-label {
     font-size: 16px;
     letter-spacing: 3px;
-    color: var(--green);
+    color: var(--accent-text);
     margin-bottom: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -223,13 +226,13 @@ body.dark .badge {
 .badge-learning {
     padding: 8px 16px;
     background: var(--green);
-    color: white;
+    color: var(--on-green);
     border-radius: 20px;
     font-size: 14px;
 }
 
 .link {
-    color: var(--green);
+    color: var(--accent-text);
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
@@ -321,5 +324,29 @@ body.dark .avatar:hover {
 @media (max-width: 480px) {
     .section {
         padding: 60px 15px;
+    }
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent-text);
+    outline-offset: 3px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
