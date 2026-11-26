@@ -9,7 +9,8 @@
 		"skills": "Skills",
 		"contact": "Contact",
 		"aboutme" : "About me",
-		"certification" : "Certifications"
+		"certification" : "Certifications",
+		"talk": "Let's talk"
 	},
 	"language-selector": {
 		"language": "LANGUAGE",
@@ -32,7 +33,11 @@
 		"alt-email" : "Email",
         "alt-linkedin" : "Linkedin",
         "alt-github" : "Github",
-		"download-cv": "Download CV"
+		"download-cv": "Download CV",
+		"available": "Available for new projects",
+		"greeting": "Hi, I'm",
+		"joke": "// I almost never break production… almost",
+		"years-chip": "4+ years of experience"
 	},
 	"projects": {
 		"view-project": "View project →",
@@ -52,7 +57,21 @@
 		"rincones-boyaca": "Rincones Boyacá",
         "rincones-boyaca-description": "<strong>Rincones Boyacá</strong> is a web application in development for discovering <strong>tourist sites in Boyacá, Colombia</strong> on an interactive map. Users can search and filter places by category, switch between map and list views, see details for each site and find their own location on the map.",
         "rincones-boyaca-alt-img": "Interactive map of the Rincones Boyacá project",
-        "see-more": "See more projects on GitHub"
+        "see-more": "See more projects on GitHub",
+        "view-detail": "View details",
+        "close": "Close",
+        "previous": "Previous",
+        "next": "Next",
+        "technologies": "Technologies",
+        "links": "Links",
+        "filters": "Filter projects",
+        "filter-all": "All",
+        "filter-fullstack": "Full Stack",
+        "filter-frontend": "Frontend",
+        "category-fullstack": "Full Stack",
+        "category-frontend": "Frontend",
+        "status-live": "Live demo",
+        "status-wip": "In progress"
 	},
 	"experience": {
 		"professional-experience": "Professional Experience",
@@ -117,7 +136,28 @@
 		"alt-github": "GitHub",
 		"whatsapp": "WhatsApp",
 		"alt-whatsapp": "WhatsApp",
-		"whatsapp-message": "Hi Carlos, I saw your portfolio and would like to talk about a job opportunity."
+		"whatsapp-message": "Hi Carlos, I saw your portfolio and would like to talk about a job opportunity.",
+		"label": "Get in touch",
+		"whatsapp-cta": "Message me on WhatsApp",
+		"field-name": "Your name",
+		"field-email": "Your email",
+		"field-subject": "Subject (optional)",
+		"field-message": "Message",
+		"placeholder-name": "e.g. Jane Doe",
+		"placeholder-email": "jane@company.com",
+		"placeholder-subject": "Project, job opening, collaboration…",
+		"placeholder-message": "Tell me about your project, timeline and goals…",
+		"error-name": "Enter your name (at least 2 characters).",
+		"error-email": "Enter a valid email, for example name@domain.com.",
+		"error-message": "Tell me a bit more: the message needs at least 10 characters.",
+		"error-message-long": "The message is over 500 characters.",
+		"error-summary": "Please check the highlighted fields before sending.",
+		"default-subject": "Contact from your portfolio",
+		"send": "Send message",
+		"form-note": "Your email app will open with the message ready. No data is stored.",
+		"success-title": "All set! 🚀",
+		"success-text": "Your email app opened with the message ready; you just need to send it. If it didn't open, write to me directly at {{email}}.",
+		"send-another": "Write another message"
 	},
 	"footer": {
 		"description": "© {{year}} Carlos Hernández — All rights reserved."
@@ -136,7 +176,10 @@
 		"title-highlight3": "Collaboration",
 		"label-highlight3": "Teamwork and mentorship",
 		"title-highlight4": "Goal",
-		"label-highlight4": "Positive impact through code"
+		"label-highlight4": "Positive impact through code",
+		"label": "Who I am",
+		"code-comment": "a life in code",
+		"code-stay": "stay consistent"
 	},
 	"certification": {
 		"label": "Training and Certifications",

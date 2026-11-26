@@ -1,127 +1,318 @@
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(92, 107, 115, 0.1);
-}
-
-.project-number {
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid var(--chip-border);
+    border-radius: 999px;
+    background: var(--chip-bg);
+    font-family: var(--font-mono);
     font-size: 12px;
-    color: var(--accent-text);
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.project-title {
-    font-size: 28px;
-    font-weight: 600;
-    margin-bottom: 15px;
+.filter-chip:hover {
+    border-color: var(--accent);
     color: var(--text);
 }
 
+.filter-chip.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+}
+
+.filter-count {
+    opacity: 0.7;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 18px 18px 22px;
+}
+
+.project-image {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-inner);
+    background: var(--bg-deep);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.04);
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 11px;
+    border: 1px solid var(--glass-border);
+    border-radius: 999px;
+    background: var(--glass-bg-solid);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.project-image .project-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.project-status-wip .status-dot,
+.project-status-wip .status-dot::after {
+    background: var(--accent-2-text);
+}
+
+.project-meta {
+    padding: 0 6px;
+}
+
+.project-title {
+    padding: 0 6px;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
 .project-description {
-    font-size: 14px;
-    line-height: 1.7;
+    padding: 0 6px;
+    font-size: 14.5px;
+    line-height: 1.65;
     color: var(--text-secondary);
-    margin-bottom: 25px;
+}
+
+.project-card .project-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-description strong {
+    color: var(--text);
+    font-weight: 600;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 25px;
-}
-
-.project-link {
-    color: var(--accent-text);
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-body.dark .project-link {
-    color: var(--accent-text);
-    text-shadow: 0 0 20px rgba(163, 177, 138, 0.3);
-}
-
-body.dark .project-link:hover {
-    color: #8a9877;
-    text-shadow: 0 0 30px rgba(163, 177, 138, 0.5);
-}
-
-.project-link:hover {
-    gap: 12px;
-}
-
-.project-image img {
-    width: 100%;
-    height: 200px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-}
-
-body.dark .about-image img {
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5),
-                0 0 0 1px rgba(163, 177, 138, 0.1);
+    gap: 7px;
+    padding: 0 6px;
 }
 
 .project-links {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding: 6px 6px 0;
 }
 
-@media (max-width: 1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 25px;
+.project-detail-btn {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 4px;
+    border: none;
+    background: transparent;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent-text);
+    cursor: pointer;
+}
+
+.project-detail-btn:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.projects-more {
+    margin-top: 44px;
+    text-align: center;
+}
+
+/* ---------- Detalle de proyecto (modal) ---------- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(2, 8, 18, 0.62);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    animation: modal-fade 0.2s ease;
+}
+
+body.light .modal-overlay {
+    background: rgba(14, 27, 72, 0.32);
+}
+
+.modal {
+    width: 100%;
+    max-width: 780px;
+    max-height: calc(100vh - 48px);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--glass-bg-solid);
+    animation: modal-rise 0.25s ease;
+}
+
+.modal:hover {
+    transform: none;
+}
+
+.modal-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.modal-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border-strong);
+    border-radius: 10px;
+    background: var(--chip-bg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    border-color: var(--accent);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 24px;
+    overflow-y: auto;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-inner);
+}
+
+.modal-title {
+    font-family: var(--font-display);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.modal-description {
+    padding: 0;
+    font-size: 15.5px;
+}
+
+.modal-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.modal-group .project-tech,
+.modal-group .project-links {
+    padding: 0;
+    margin-top: 0;
+}
+
+.modal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 20px;
+    border-top: 1px solid var(--border);
+}
+
+.modal-counter {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+@keyframes modal-fade {
+    from {
+        opacity: 0;
     }
 }
 
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+@keyframes modal-rise {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.98);
     }
-    
-    .project-title {
+}
+
+@media (max-width: 600px) {
+    .modal-overlay {
+        padding: 12px;
+        align-items: flex-end;
+    }
+
+    .modal {
+        max-height: calc(100vh - 24px);
+    }
+
+    .modal-title {
         font-size: 24px;
-    }
-    
-    .project-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    .project-link {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .project-tech {
-        gap: 5px;
-    }
-    
-    .badge {
-        font-size: 10px;
-        padding: 4px 10px;
     }
 }

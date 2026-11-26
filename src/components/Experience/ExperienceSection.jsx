@@ -7,13 +7,13 @@ const ExperienceSection = () => {
     const {t} = useTranslation();
 
     return (
-        <section id="experience" className="section section-gray">
+        <section id="experience" className="section section-alt">
             <div className="section-header">
                 <div className="section-label">{t('experience.professional-experience')}</div>
                 <h2 className="section-title">{t('experience.experience')}</h2>
             </div>
 
-            <div className="timeline">
+            <div className="timeline section-inner">
                 {[...experiences].reverse().map(exp => (
                     <ExperienceCard key={exp.id} experience={exp} />
                 ))}

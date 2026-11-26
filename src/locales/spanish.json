@@ -9,7 +9,8 @@
         "skills": "Conocimientos",
         "contact": "Contacto",
         "aboutme" : "Sobre mí",
-        "certification" : "Certificaciones"
+        "certification" : "Certificaciones",
+        "talk": "Hablemos"
     },
     "language-selector": {
         "language": "IDIOMA",
@@ -32,7 +33,11 @@
         "alt-email" : "Correo electrónico",
         "alt-linkedin" : "Linkedin",
         "alt-github" : "Github",
-        "download-cv": "Descargar CV"
+        "download-cv": "Descargar CV",
+        "available": "Disponible para nuevos proyectos",
+        "greeting": "Hola, soy",
+        "joke": "// casi nunca rompo producción… casi",
+        "years-chip": "4+ años de experiencia"
     },
     "projects": {
         "view-project": "Ver proyecto →",
@@ -52,7 +57,21 @@
         "rincones-boyaca": "Rincones Boyacá",
         "rincones-boyaca-description": "<strong>Rincones Boyacá</strong> es una aplicación web en desarrollo para descubrir <strong>sitios turísticos de Boyacá</strong> en un mapa interactivo. Permite buscar y filtrar lugares por categoría, alternar entre mapa y lista, ver la información de cada sitio y ubicarse en el mapa.",
         "rincones-boyaca-alt-img": "Mapa interactivo del proyecto Rincones Boyacá",
-        "see-more": "Ver más proyectos en Github"
+        "see-more": "Ver más proyectos en Github",
+        "view-detail": "Ver detalle",
+        "close": "Cerrar",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "technologies": "Tecnologías",
+        "links": "Enlaces",
+        "filters": "Filtrar proyectos",
+        "filter-all": "Todos",
+        "filter-fullstack": "Full Stack",
+        "filter-frontend": "Frontend",
+        "category-fullstack": "Full Stack",
+        "category-frontend": "Frontend",
+        "status-live": "Demo en vivo",
+        "status-wip": "En desarrollo"
     },
     "experience": {
         "professional-experience": "Trayectoria profesional",
@@ -117,7 +136,28 @@
         "alt-github" : "Github",
         "whatsapp": "WhatsApp",
         "alt-whatsapp" : "WhatsApp",
-        "whatsapp-message": "Hola Carlos, vi tu portafolio y me gustaría hablar sobre una vacante."
+        "whatsapp-message": "Hola Carlos, vi tu portafolio y me gustaría hablar sobre una vacante.",
+        "label": "Contacto",
+        "whatsapp-cta": "Escríbeme por WhatsApp",
+        "field-name": "Tu nombre",
+        "field-email": "Tu correo",
+        "field-subject": "Asunto (opcional)",
+        "field-message": "Mensaje",
+        "placeholder-name": "Ej. Ana Pérez",
+        "placeholder-email": "ana@empresa.com",
+        "placeholder-subject": "Proyecto, vacante, colaboración…",
+        "placeholder-message": "Cuéntame sobre tu proyecto, plazos y objetivos…",
+        "error-name": "Escribe tu nombre (mínimo 2 caracteres).",
+        "error-email": "Ingresa un correo válido, por ejemplo nombre@dominio.com.",
+        "error-message": "Cuéntame un poco más: el mensaje necesita al menos 10 caracteres.",
+        "error-message-long": "El mensaje supera los 500 caracteres.",
+        "error-summary": "Revisa los campos marcados antes de enviar.",
+        "default-subject": "Contacto desde tu portafolio",
+        "send": "Enviar mensaje",
+        "form-note": "Se abrirá tu app de correo con el mensaje listo. No se guarda ningún dato.",
+        "success-title": "¡Todo listo! 🚀",
+        "success-text": "Se abrió tu app de correo con el mensaje preparado; solo falta que lo envíes. Si no se abrió, escríbeme directamente a {{email}}.",
+        "send-another": "Escribir otro mensaje"
     },
     "footer" : {
         "description" : "© {{year}} Carlos Hernández — Todos los derechos reservados."
@@ -136,7 +176,10 @@
         "title-highlight3": "Colaboración",
         "label-highlight3": "Trabajo en equipo y mentoría",
         "title-highlight4": "Objetivo",
-        "label-highlight4": "Impacto positivo a través del código"
+        "label-highlight4": "Impacto positivo a través del código",
+        "label": "Quién soy",
+        "code-comment": "una vida en código",
+        "code-stay": "constancia ante todo"
     },
     "certification": {
         "label": "Formación y certificaciones",

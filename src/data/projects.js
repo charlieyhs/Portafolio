@@ -3,6 +3,8 @@ import { gym, motoViewer, rinconesBoyaca, savingsFund } from "../assets/images";
 export const projects = [
     {
         id: "01",
+        category: "frontend",
+        status: "live",
         name: "projects.gym",
         description: "projects.gym-description",
         skills: [
@@ -22,6 +24,8 @@ export const projects = [
     },
     {
         id: "02",
+        category: "fullstack",
+        status: "live",
         name: "projects.savingsfund",
         description: "projects.savingsfund-description",
         skills: [
@@ -47,6 +51,8 @@ export const projects = [
     },
     {
         id: "03",
+        category: "frontend",
+        status: "live",
         name: "projects.moto-viewer",
         description: "projects.moto-viewer-description",
         skills: [
@@ -62,6 +68,8 @@ export const projects = [
     },
     {
         id: "04",
+        category: "frontend",
+        status: "wip",
         name: "projects.rincones-boyaca",
         description: "projects.rincones-boyaca-description",
         skills: [

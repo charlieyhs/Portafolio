@@ -11,6 +11,7 @@ import CertificationsSections from "./certifications/CertificationSections";
 import { useTranslation } from "react-i18next";
 import { scrollBehavior } from "../utils/scroll";
 import { useEffect, useState } from "react";
+import Icon from "./Icon";
 
 const Portfolio = () => {
     const {t} = useTranslation();
@@ -43,7 +44,7 @@ const Portfolio = () => {
                 id="backToTop"
                 aria-label={t('navbar.back-to-top')}
                 onClick={() => btnTop()}>
-                ↑ 
+                <Icon name="arrow-up" size={20} />
             </button>
             <main>
                 <HeroSection/>
