@@ -2,13 +2,15 @@
 	"navbar": {
 		"logo-description": "Personal brand logo",
 		"close-menu": "Close menu",
+		"back-to-top": "Back to top",
 		"open-menu": "Open menu",
 		"projects": "Projects",
 		"experience": "Experience",
 		"skills": "Skills",
 		"contact": "Contact",
 		"aboutme" : "About me",
-		"certification" : "Certifications"
+		"certification" : "Certifications",
+		"talk": "Let's talk"
 	},
 	"language-selector": {
 		"language": "LANGUAGE",
@@ -19,7 +21,7 @@
 	"hero": {
 		"description-avatar": "Avatar image of Carlos Hernández",
 		"name": "Carlos Hernández",
-		"self-description": "Software developer with over 3 years of experience in designing and implementing efficient and scalable technological solutions, focused on solving complex problems and enhancing user experience.",
+		"self-description": "Software developer with over 4 years of experience in designing and implementing efficient and scalable technological solutions, focused on solving complex problems and enhancing user experience.",
 		"view-projects": "View projects",
 		"aria-label-projects": "View my featured projects",
 		"contact": "Contact",
@@ -31,7 +33,11 @@
 		"alt-email" : "Email",
         "alt-linkedin" : "Linkedin",
         "alt-github" : "Github",
-		"download-cv": "Download CV"
+		"download-cv": "Download CV",
+		"available": "Available for new projects",
+		"greeting": "Hi, I'm",
+		"joke": "// I almost never break production… almost",
+		"years-chip": "4+ years of experience"
 	},
 	"projects": {
 		"view-project": "View project →",
@@ -46,9 +52,26 @@
 		"moto-viewer": "Moto 360°",
 		"moto-viewer-description": "The <strong>Interactive 360° Viewer</strong> is a web application that allows users to view objects from every angle through preloaded images. It provides a smooth and intuitive experience with rotation, zoom, and navigation controls for both PC and mobile devices, combining modern design and high visual performance.",
 		"gym-alt-img" : "Main background of the gym project",
-		"savingsfund-alt-img": "Main fund of the savings fund project",
+		"savingsfund-alt-img": "Main background of the savings fund project",
         "motoviewer-alt-img": "Main background of the Moto 360 project",
-		"see-more": "See more projects on GitHub"
+		"rincones-boyaca": "Rincones Boyacá",
+        "rincones-boyaca-description": "<strong>Rincones Boyacá</strong> is a web application in development for discovering <strong>tourist sites in Boyacá, Colombia</strong> on an interactive map. Users can search and filter places by category, switch between map and list views, see details for each site and find their own location on the map.",
+        "rincones-boyaca-alt-img": "Interactive map of the Rincones Boyacá project",
+        "see-more": "See more projects on GitHub",
+        "view-detail": "View details",
+        "close": "Close",
+        "previous": "Previous",
+        "next": "Next",
+        "technologies": "Technologies",
+        "links": "Links",
+        "filters": "Filter projects",
+        "filter-all": "All",
+        "filter-fullstack": "Full Stack",
+        "filter-frontend": "Frontend",
+        "category-fullstack": "Full Stack",
+        "category-frontend": "Frontend",
+        "status-live": "Live demo",
+        "status-wip": "In progress"
 	},
 	"experience": {
 		"professional-experience": "Professional Experience",
@@ -61,7 +84,7 @@
 		"job2": {
 			"date": "July 2024 - Present",
 			"position": "Senior Developer",
-			"description": "<ul><li>Designed and implemented <strong>secure RESTful APIs</strong> using <strong>OAuth 2.0</strong>, achieving <strong>efficient integration with external providers</strong> while ensuring data protection.</li><li>Collaborated directly with <strong>clients</strong> in the <strong>definition of requirements</strong>, ensuring solutions were <strong>aligned with their business goals and needs</strong>.</li><li><strong>Led key projects</strong> from the definition phase to final delivery, meeting <strong>100% of established deadlines</strong> and ensuring <strong>client satisfaction</strong>.</li><li>Contributed to the <strong>optimization of the microservices architecture</strong>, achieving a <strong>15% reduction in application response times</strong> and improving overall performance.</li></ul>"
+			"description": "<ul><li>Designed and implemented <strong>secure RESTful APIs</strong> using <strong>OAuth 2.0</strong>, achieving <strong>efficient integration with external providers</strong> while ensuring data protection.</li><li>Collaborated directly with <strong>clients</strong> in the <strong>definition of requirements</strong>, ensuring solutions were <strong>aligned with their business goals and needs</strong>.</li><li><strong>Led key projects</strong> from the definition phase to final delivery, meeting <strong>100% of established deadlines</strong> and ensuring <strong>client satisfaction</strong>.</li><li>Contributed to the <strong>optimization of the microservices architecture</strong>, achieving a <strong>15% reduction in application response times</strong> and improving overall performance.</li><li>Implemented <strong>web portals for clients</strong>, including a <strong>patient portal</strong>.</li><li>Improved <strong>item delivery and pickup</strong> with <strong>vehicle planning APIs</strong>, splitting the map into smaller zones to optimize planning around <strong>time-window constraints</strong>.</li></ul>"
 		}
 	},
 	"skills": {
@@ -91,8 +114,14 @@
             "alt-icon" : "Tools",
             "title" : "Tools"
         },
-		"learning": "Currently learning",
-		"learning1": "English",
+		"soft": {
+            "leadership": "Leadership",
+            "communication": "Communication",
+            "teamwork": "Teamwork",
+            "problem-solving": "Problem solving"
+        },
+        "learning": "Currently learning",
+		"learning1": "English (B1, technical reading)",
         "learning2": "JUnit",
         "learning3": "Golang"
 	},
@@ -104,10 +133,34 @@
 		"linkedin": "LinkedIn",
 		"alt-linkedin": "LinkedIn",
 		"github": "GitHub",
-		"alt-github": "GitHub"
+		"alt-github": "GitHub",
+		"whatsapp": "WhatsApp",
+		"alt-whatsapp": "WhatsApp",
+		"whatsapp-message": "Hi Carlos, I saw your portfolio and would like to talk about a job opportunity.",
+		"label": "Get in touch",
+		"whatsapp-cta": "Message me on WhatsApp",
+		"field-name": "Your name",
+		"field-email": "Your email",
+		"field-subject": "Subject (optional)",
+		"field-message": "Message",
+		"placeholder-name": "e.g. Jane Doe",
+		"placeholder-email": "jane@company.com",
+		"placeholder-subject": "Project, job opening, collaboration…",
+		"placeholder-message": "Tell me about your project, timeline and goals…",
+		"error-name": "Enter your name (at least 2 characters).",
+		"error-email": "Enter a valid email, for example name@domain.com.",
+		"error-message": "Tell me a bit more: the message needs at least 10 characters.",
+		"error-message-long": "The message is over 500 characters.",
+		"error-summary": "Please check the highlighted fields before sending.",
+		"default-subject": "Contact from your portfolio",
+		"send": "Send message",
+		"form-note": "Your email app will open with the message ready. No data is stored.",
+		"success-title": "All set! 🚀",
+		"success-text": "Your email app opened with the message ready; you just need to send it. If it didn't open, write to me directly at {{email}}.",
+		"send-another": "Write another message"
 	},
 	"footer": {
-		"description": "© 2025 Carlos Hernández — All rights reserved."
+		"description": "© {{year}} Carlos Hernández — All rights reserved."
 	},
     "theme": {
         "alt" : "Dark or light theme toggle button"
@@ -123,11 +176,21 @@
 		"title-highlight3": "Collaboration",
 		"label-highlight3": "Teamwork and mentorship",
 		"title-highlight4": "Goal",
-		"label-highlight4": "Positive impact through code"
+		"label-highlight4": "Positive impact through code",
+		"label": "Who I am",
+		"code-comment": "a life in code",
+		"code-stay": "stay consistent"
 	},
 	"certification": {
 		"label": "Training and Certifications",
 		"title": "Education",
+		"certification5": {
+			"title": "Systems Engineering",
+			"institution": "National Open and Distance University - UNAD",
+			"time": "In progress",
+			"altImgInstitution": "Logo of the National Open and Distance University UNAD",
+			"altImgTitle": "Illustration related to systems engineering"
+		},
 		"certification1": {
 			"title": "Technology in Software Development",
 			"institution": "National Open and Distance University - UNAD",

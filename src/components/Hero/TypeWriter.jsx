@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { prefersReducedMotion } from "../../utils/scroll";
 import { useEffect, useState } from "react";
 
 const TypeWriter = ({texts, speed = 100, pause = 1000}) => {
@@ -7,7 +8,11 @@ const TypeWriter = ({texts, speed = 100, pause = 1000}) => {
     const [subIndex, setSubIndex] = useState(0); // Letras
     const [deleting, setDeleting] = useState(false);
 
+    const [reducedMotion] = useState(prefersReducedMotion);
+
     useEffect(() => {
+        if(reducedMotion) return;
+
         const currentText = texts[index];
 
         // Aún esá "escribiendo"
@@ -20,7 +25,7 @@ const TypeWriter = ({texts, speed = 100, pause = 1000}) => {
         }
 
         // Texto completo, esperar antes de borrar
-        if(!deleting && subIndex === currentText.length){
+        if(!deleting && subIndex >= currentText.length){
             const timeout = setTimeout(() => setDeleting(true), pause);
             return () => clearTimeout(timeout);
         }
@@ -39,12 +44,15 @@ const TypeWriter = ({texts, speed = 100, pause = 1000}) => {
             setIndex((index+1)%texts.length);
         }        
 
-    },[deleting, index, pause, speed, subIndex, texts]);
+    },[deleting, index, pause, reducedMotion, speed, subIndex, texts]);
 
     return (
         <div className="typewriter">
-            {texts[index].substring(0, subIndex)}
-            <span className="cursor">|</span>
+            <span className="sr-only">{texts.join(', ')}</span>
+            <span aria-hidden="true">
+                {reducedMotion ? texts[0] : texts[index].substring(0, subIndex)}
+                {!reducedMotion && <span className="cursor">|</span>}
+            </span>
         </div>
     )
 

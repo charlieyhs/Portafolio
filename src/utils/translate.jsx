@@ -6,6 +6,13 @@ import english from '../locales/english.json';
 import spanish from '../locales/spanish.json';
 
 
+const syncDocument = (lng) => {
+    document.documentElement.lang = lng;
+    document.documentElement.dir = i18n.dir(lng);
+};
+
+i18n.on('languageChanged', syncDocument);
+
 i18n
     .use(LanguageDetector)
     .use(initReactI18next)
@@ -14,7 +21,15 @@ i18n
             en: {translation: english},
             es: {translation: spanish}
         },
+        supportedLngs: ['es', 'en'],
         fallbackLng: 'es',
+        detection: {
+            // Primero la preferencia guardada, luego el idioma del navegador
+            order: ['localStorage', 'navigator'],
+            lookupLocalStorage: 'selectedLanguage',
+            caches: ['localStorage'],
+            convertDetectedLanguage: (lng) => lng.split('-')[0],
+        },
         interpolation: {
             escapeValue: false
         }

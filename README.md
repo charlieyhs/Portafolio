@@ -9,7 +9,7 @@ Este portafolio refleja mi trayectoria, mis habilidades técnicas y algunos de l
 
 - ⚛️ **React** – Para construir interfaces interactivas y dinámicas.  
 - ⚡ **Vite** – Herramienta de desarrollo ultrarrápida.  
-- 🧭 **React Router** – Navegación fluida entre secciones.
+- 🌐 **i18next** – Contenido en español e inglés.
 
 ---
 
@@ -25,7 +25,7 @@ Este portafolio refleja mi trayectoria, mis habilidades técnicas y algunos de l
 
 ## 🧠 Sobre mí
 
-Soy un **desarrollador de software** con mas de 3 años de experiencia, enfocado en la creación de aplicaciones eficientes, escalables y con buena experiencia de usuario.  
+Soy un **desarrollador de software** con más de 4 años de experiencia, enfocado en la creación de aplicaciones eficientes, escalables y con buena experiencia de usuario.  
 Me motiva aprender, mejorar continuamente y aportar soluciones que generen impacto real.
 
 - 💼 **Stack principal:** Java, Spring Boot, React, SQL.  
@@ -39,11 +39,26 @@ Me motiva aprender, mejorar continuamente y aportar soluciones que generen impac
 - ✉️ [carlossanchez25fasa@gmail.com](mailto:carlossanchez25fasa@gmail.com)  
 - 🐙 [GitHub](https://github.com/charlieyhs)  
 - 💬 [LinkedIn](https://www.linkedin.com/in/carlosyhs)  
-- 🌐 [Mi página web](https://charlieyhs.github.io/portafolio)
+- 🌐 [Mi página web](https://charlieyhs.github.io/Portafolio/)
 
 ---
 
 ## 🌍 Visualiza el portafolio
 
 Puedes ver el sitio en línea aquí 👇  
-👉 **[Ver Portafolio en Vivo](https://charlieyhs.github.io/portafolio)**  
+👉 **[Ver Portafolio en Vivo](https://charlieyhs.github.io/Portafolio/)**  
+
+
+---
+
+## 🛠️ Desarrollo
+
+```bash
+npm ci
+npm run dev
+npm run lint
+npm test
+npm run build
+```
+
+Cada push a `main` valida el proyecto y lo publica en GitHub Pages mediante GitHub Actions.

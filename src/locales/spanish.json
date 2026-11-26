@@ -2,24 +2,26 @@
     "navbar": {
         "logo-description": "Logo de marca personal",
         "close-menu": "Cerrar menú",
+        "back-to-top": "Volver arriba",
         "open-menu": "Abrir menú",
         "projects": "Proyectos",
         "experience": "Experiencia",
         "skills": "Conocimientos",
         "contact": "Contacto",
         "aboutme" : "Sobre mí",
-        "certification" : "Certificaciones"
+        "certification" : "Certificaciones",
+        "talk": "Hablemos"
     },
     "language-selector": {
         "language": "IDIOMA",
         "spanish": "Español",
-        "english": "Ingles",
+        "english": "Inglés",
         "change-language": "Botón para cambiar de idioma"
     },
     "hero": {
         "description-avatar" : "Imagen de avatar de Carlos Hernández",
         "name" : "Carlos Hernández",
-        "self-description" : "Desarrollador de software con más de 3 años de experiencia en el diseño e implementación de soluciones tecnológicas eficientes y escalables, enfocado en resolver problemas complejos y mejorar la experiencia del usuario.",
+        "self-description" : "Desarrollador de software con más de 4 años de experiencia en el diseño e implementación de soluciones tecnológicas eficientes y escalables, enfocado en resolver problemas complejos y mejorar la experiencia del usuario.",
         "view-projects" : "Ver proyectos",
         "aria-label-projects": "Ver mis proyectos destacados",
         "contact" : "Contactar",
@@ -31,7 +33,11 @@
         "alt-email" : "Correo electrónico",
         "alt-linkedin" : "Linkedin",
         "alt-github" : "Github",
-        "download-cv": "Descargar CV"
+        "download-cv": "Descargar CV",
+        "available": "Disponible para nuevos proyectos",
+        "greeting": "Hola, soy",
+        "joke": "// casi nunca rompo producción… casi",
+        "years-chip": "4+ años de experiencia"
     },
     "projects": {
         "view-project": "Ver proyecto →",
@@ -48,7 +54,24 @@
         "gym-alt-img": "Fondo principal del proyecto de gimnasio",
         "savingsfund-alt-img": "Fondo principal del proyecto de fondo de ahorro",
         "motoviewer-alt-img": "Fondo principal del proyecto de moto 360",
-        "see-more": "Ver más proyectos en Github"
+        "rincones-boyaca": "Rincones Boyacá",
+        "rincones-boyaca-description": "<strong>Rincones Boyacá</strong> es una aplicación web en desarrollo para descubrir <strong>sitios turísticos de Boyacá</strong> en un mapa interactivo. Permite buscar y filtrar lugares por categoría, alternar entre mapa y lista, ver la información de cada sitio y ubicarse en el mapa.",
+        "rincones-boyaca-alt-img": "Mapa interactivo del proyecto Rincones Boyacá",
+        "see-more": "Ver más proyectos en Github",
+        "view-detail": "Ver detalle",
+        "close": "Cerrar",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "technologies": "Tecnologías",
+        "links": "Enlaces",
+        "filters": "Filtrar proyectos",
+        "filter-all": "Todos",
+        "filter-fullstack": "Full Stack",
+        "filter-frontend": "Frontend",
+        "category-fullstack": "Full Stack",
+        "category-frontend": "Frontend",
+        "status-live": "Demo en vivo",
+        "status-wip": "En desarrollo"
     },
     "experience": {
         "professional-experience": "Trayectoria profesional",
@@ -61,7 +84,7 @@
         "job2":{
             "date": "Julio 2024 - Presente",
             "position" : "Desarrollador Senior",
-            "description" : "<ul><li>Diseñé e implementé <strong>APIs RESTful seguras</strong> utilizando <strong>OAuth 2.0</strong>, logrando una <strong>integración eficiente con proveedores externos</strong> y garantizando la protección de datos.</li><li>Colaboré directamente con <strong>clientes</strong> en la <strong>definición de requerimientos</strong>, asegurando que las soluciones desarrolladas estuvieran <strong>alineadas con sus necesidades y objetivos de negocio</strong>.</li><li><strong>Lideré proyectos clave</strong> desde la fase de definición hasta la entrega final, cumpliendo el <strong>100% de los plazos establecidos</strong> y asegurando la <strong>satisfacción del cliente</strong>.</li><li>Participé en la <strong>optimización de la arquitectura de microservicios</strong>, logrando una <strong>reducción del 15% en los tiempos de respuesta</strong> de las aplicaciones y mejorando su desempeño general.</li></ul>"
+            "description" : "<ul><li>Diseñé e implementé <strong>APIs RESTful seguras</strong> utilizando <strong>OAuth 2.0</strong>, logrando una <strong>integración eficiente con proveedores externos</strong> y garantizando la protección de datos.</li><li>Colaboré directamente con <strong>clientes</strong> en la <strong>definición de requerimientos</strong>, asegurando que las soluciones desarrolladas estuvieran <strong>alineadas con sus necesidades y objetivos de negocio</strong>.</li><li><strong>Lideré proyectos clave</strong> desde la fase de definición hasta la entrega final, cumpliendo el <strong>100% de los plazos establecidos</strong> y asegurando la <strong>satisfacción del cliente</strong>.</li><li>Participé en la <strong>optimización de la arquitectura de microservicios</strong>, logrando una <strong>reducción del 15% en los tiempos de respuesta</strong> de las aplicaciones y mejorando su desempeño general.</li><li>Implementé <strong>portales web para clientes</strong>, incluido un <strong>portal de pacientes</strong>.</li><li>Mejoré la <strong>entrega y recogida de artículos</strong> con <strong>APIs de planificación de vehículos</strong>, dividiendo el mapa en zonas más pequeñas para optimizar la planificación según las <strong>restricciones horarias</strong>.</li></ul>"
         }
     },
     "skills": {
@@ -91,8 +114,14 @@
             "alt-icon" : "Herramientas",
             "title" : "Herramientas"
         },
+        "soft": {
+            "leadership": "Liderazgo",
+            "communication": "Comunicación",
+            "teamwork": "Trabajo en equipo",
+            "problem-solving": "Resolución de problemas"
+        },
         "learning": "Actualmente aprendiendo",
-        "learning1": "Inglés",
+        "learning1": "Inglés (B1, lectura técnica)",
         "learning2": "JUnit",
         "learning3": "Golang"
     },
@@ -106,10 +135,32 @@
         "github" : "Github",
         "alt-github" : "Github",
         "whatsapp": "WhatsApp",
-        "alt-whatsapp" : "WhatsApp"
+        "alt-whatsapp" : "WhatsApp",
+        "whatsapp-message": "Hola Carlos, vi tu portafolio y me gustaría hablar sobre una vacante.",
+        "label": "Contacto",
+        "whatsapp-cta": "Escríbeme por WhatsApp",
+        "field-name": "Tu nombre",
+        "field-email": "Tu correo",
+        "field-subject": "Asunto (opcional)",
+        "field-message": "Mensaje",
+        "placeholder-name": "Ej. Ana Pérez",
+        "placeholder-email": "ana@empresa.com",
+        "placeholder-subject": "Proyecto, vacante, colaboración…",
+        "placeholder-message": "Cuéntame sobre tu proyecto, plazos y objetivos…",
+        "error-name": "Escribe tu nombre (mínimo 2 caracteres).",
+        "error-email": "Ingresa un correo válido, por ejemplo nombre@dominio.com.",
+        "error-message": "Cuéntame un poco más: el mensaje necesita al menos 10 caracteres.",
+        "error-message-long": "El mensaje supera los 500 caracteres.",
+        "error-summary": "Revisa los campos marcados antes de enviar.",
+        "default-subject": "Contacto desde tu portafolio",
+        "send": "Enviar mensaje",
+        "form-note": "Se abrirá tu app de correo con el mensaje listo. No se guarda ningún dato.",
+        "success-title": "¡Todo listo! 🚀",
+        "success-text": "Se abrió tu app de correo con el mensaje preparado; solo falta que lo envíes. Si no se abrió, escríbeme directamente a {{email}}.",
+        "send-another": "Escribir otro mensaje"
     },
     "footer" : {
-        "description" : "© 2025 Carlos Hernández — Todos los derechos reservados."
+        "description" : "© {{year}} Carlos Hernández — Todos los derechos reservados."
     },
     "theme": {
         "alt" : "Botón de cambio de tema oscuro o claro"
@@ -125,11 +176,21 @@
         "title-highlight3": "Colaboración",
         "label-highlight3": "Trabajo en equipo y mentoría",
         "title-highlight4": "Objetivo",
-        "label-highlight4": "Impacto positivo a través del código"
+        "label-highlight4": "Impacto positivo a través del código",
+        "label": "Quién soy",
+        "code-comment": "una vida en código",
+        "code-stay": "constancia ante todo"
     },
     "certification": {
         "label": "Formación y certificaciones",
         "title": "Educación",
+        "certification5": {
+            "title": "Ingeniería de Sistemas",
+            "institution": "Universidad nacional abierta y a distancia - UNAD",
+            "time": "En curso",
+            "altImgInstitution": "Logo de la Universidad Nacional Abierta y a Distancia UNAD",
+            "altImgTitle": "Ilustración alusiva a la ingeniería de sistemas"
+        },
         "certification1": {
             "title": "Tecnología en desarrollo de software",
             "institution": "Universidad nacional abierta y a distancia - UNAD",

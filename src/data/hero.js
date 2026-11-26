@@ -1,22 +1,22 @@
-import { email, github, linkedin } from "../assets/images";
+import { EMAIL, GITHUB_URL, LINKEDIN_URL } from "./personal";
 
 export const socialMedia = [
     {
         id: "linkedin",
-        link : "https://www.linkedin.com/in/carlosyhs",
-        icon : linkedin,
+        link : LINKEDIN_URL,
+        icon : "linkedin",
         altIcon : "hero.alt-linkedin",
     },
     {
         id: "github",
-        link : "https://github.com/charlieyhs",
-        icon : github,
+        link : GITHUB_URL,
+        icon : "github",
         altIcon : "hero.alt-github",
     },
     {
         id: "email",
-        link : "mailto:carlossanchez25fasa@gmail.com",
-        icon : email,
+        link : `mailto:${EMAIL}`,
+        icon : "mail",
         altIcon : "hero.alt-email",
     }
 ]

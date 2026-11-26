@@ -2,69 +2,77 @@ import PropTypes from "prop-types";
 import '../../css/projects.css'
 import { useTranslation } from "react-i18next";
 import Badge from "../Badge";
+import RichText from "../RichText";
+import Icon from "../Icon";
+import { projectPropType } from "./projectPropType";
 
-const ProjectCard = ({project}) => {
+const MAX_BADGES = 6;
+
+const ProjectCard = ({project, onOpen}) => {
     const {t} = useTranslation();
+    const hidden = project.skills.length - MAX_BADGES;
+
     return (
-        <div className="card">
+        <article className="card project-card">
             <div className="project-image">
-                <img src={project.img} 
-                    alt={project.altImg}
-                    aria-label={project.altImg}
+                <img src={project.img}
+                    alt={t(project.altImg)}
+                    loading="lazy"
                 />
+                <span className={`project-status project-status-${project.status}`}>
+                    <span className="status-dot" aria-hidden="true" />
+                    {t(`projects.status-${project.status}`)}
+                </span>
             </div>
-            <div className="project-number">{project.id}</div>
+
+            <div className="mono-label project-meta">
+                {project.id} · {t(`projects.category-${project.category}`)}
+            </div>
             <h3 className="project-title">{t(project.name)}</h3>
-            <p className="project-description"
-                dangerouslySetInnerHTML={{ __html: t(project.description) }}>
-            </p>
+            <RichText className="project-description" i18nKey={project.description} />
+
             <div className="project-tech">
-                {project.skills.map(skill => (
+                {project.skills.slice(0, MAX_BADGES).map(skill => (
                     <Badge key={skill.id} name={skill.name} />
                 ))}
+                {hidden > 0 && <Badge name={`+${hidden}`} />}
             </div>
 
             <div className="project-links">
-                <a href={project.link} target="_blank" className="project-link">
+                <a href={project.link} target="_blank" rel="noopener noreferrer"
+                    className="btn btn-primary btn-sm">
                     {t('projects.view-project')}
                 </a>
-                
+
                 {project.frontend && (
-                    <a href={project.frontend} target="_blank" rel="noopener noreferrer" 
-                        className="project-link">
+                    <a href={project.frontend} target="_blank" rel="noopener noreferrer"
+                        className="btn btn-secondary btn-sm">
+                        <Icon name="github" size={14} />
                         {t('projects.frontend')}
                     </a>
                 )}
                 {project.backend && (
-                    <a href={project.backend} target="_blank" rel="noopener noreferrer" 
-                        className="project-link">
+                    <a href={project.backend} target="_blank" rel="noopener noreferrer"
+                        className="btn btn-secondary btn-sm">
+                        <Icon name="github" size={14} />
                         {t('projects.backend')}
                     </a>
                 )}
-            </div>
 
-        </div>
+                <button type="button"
+                    className="project-detail-btn"
+                    onClick={() => onOpen(project.id)}
+                    aria-label={`${t('projects.view-detail')}: ${t(project.name)}`}>
+                    {t('projects.view-detail')}
+                    <Icon name="expand" size={14} />
+                </button>
+            </div>
+        </article>
     );
 };
-const skillPropType = PropTypes.shape({
-    id : PropTypes.string.isRequired,
-    name : PropTypes.string.isRequired,
-});
-
-const projectPropType = PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    skills: PropTypes.arrayOf(skillPropType).isRequired,
-    link: PropTypes.string.isRequired,
-    frontend: PropTypes.string.isRequired,
-    backend: PropTypes.string.isRequired,
-    altImg: PropTypes.string.isRequired,
-    img: PropTypes.string.isRequired,
-});
-
 ProjectCard.propTypes = {
     project : projectPropType.isRequired,
+    onOpen : PropTypes.func.isRequired,
 };
 
 export default ProjectCard;

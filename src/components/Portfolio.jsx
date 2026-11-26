@@ -8,9 +8,13 @@ import SkillsSection from "./Skills/SkillsSection";
 import '../css/portfolio.css'
 import AboutMe from "./about/About";
 import CertificationsSections from "./certifications/CertificationSections";
+import { useTranslation } from "react-i18next";
+import { scrollBehavior } from "../utils/scroll";
 import { useEffect, useState } from "react";
+import Icon from "./Icon";
 
 const Portfolio = () => {
+    const {t} = useTranslation();
 
     useEffect(()=> {
         const handleScroll = () => {
@@ -29,7 +33,7 @@ const Portfolio = () => {
     const [visible, setVisible] = useState(false);
 
     const btnTop = () => {
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({top: 0, behavior: scrollBehavior()});
     };
 
     return (
@@ -38,8 +42,9 @@ const Portfolio = () => {
             <button 
                 className={`back-to-top ${visible ? "visible" : ""}`}
                 id="backToTop"
+                aria-label={t('navbar.back-to-top')}
                 onClick={() => btnTop()}>
-                ↑ 
+                <Icon name="arrow-up" size={20} />
             </button>
             <main>
                 <HeroSection/>

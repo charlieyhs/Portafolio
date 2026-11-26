@@ -9,6 +9,16 @@ import { diplomadoDesarrollo,
 
 export const certifications = [
     {
+        id: '5',
+        title: 'certification.certification5.title',
+        institution: 'certification.certification5.institution',
+        date: 'certification.certification5.time',
+        imgInstitution: { light: unad, dark: unad },
+        altImgInstitution: 'certification.certification5.altImgInstitution',
+        imgTitle: tecnologoSoftware,
+        altImgTitle: 'certification.certification5.altImgTitle',
+    },
+    {
         id: '1',
         title: 'certification.certification1.title',
         institution: 'certification.certification1.institution',

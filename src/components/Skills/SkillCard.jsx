@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
+import Badge from "../Badge";
 
 const SkillCard = ({skill}) => {
     const {t} = useTranslation();
@@ -12,9 +13,12 @@ const SkillCard = ({skill}) => {
 
             <h3 className="skill-title">{t(skill.title)}</h3>
 
-            <p className="skill-list">
-                {skill.skills.map(s => s )}
-            </p>
+            <ul className="skill-list">
+                {skill.skills.map(s => {
+                    const name = skill.translatable ? t(s) : s;
+                    return <li key={s}><Badge name={name} /></li>;
+                })}
+            </ul>
         </div>
     );
 };
@@ -24,6 +28,7 @@ SkillCard.propTypes = {
         icon : PropTypes.string.isRequired,
         altIcon : PropTypes.string.isRequired,
         title : PropTypes.string.isRequired,
+        translatable : PropTypes.bool,
         skills : PropTypes.arrayOf(PropTypes.string).isRequired
     })
 };

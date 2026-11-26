@@ -1,9 +1,3 @@
-// Contact images
-export { default as email } from "./images/contact/email.webp";
-export { default as github } from "./images/contact/github.webp";
-export { default as linkedin } from "./images/contact/linkedin.webp";
-export { default as whatsapp } from "./images/contact/whatsapp.webp";
-
 // certification images
 export { default as unad } from "./images/certification/unad.webp";
 export { default as tecnologoSoftware } from "./images/certification/tecnologo_software.webp";
@@ -17,6 +11,7 @@ export { default as diplomadoDesarrollo } from "./images/certification/diplomado
 // project images
 export { default as savingsFund } from "./images/project/savings_fund.webp";
 export { default as motoViewer } from "./images/project/moto_viewer.webp";
+export { default as rinconesBoyaca } from "./images/project/rincones_boyaca.webp";
 export { default as gym } from "./images/project/gym.webp";
 
 // skills images
