@@ -17,7 +17,7 @@ const CertificationsSections = () => {
     };
 
     return (
-        <section id="certification" className="section section-gray"
+        <section id="certification" className="section section-alt"
             aria-labelledby="certification-title">
             <div className="section-header">
                 <div className="section-label">{t('certification.label')}</div>
@@ -26,7 +26,7 @@ const CertificationsSections = () => {
                 </h2>
             </div>
 
-            <div className="cert-grid">
+            <div className="cert-grid section-inner">
                 {certifications.map(cert => {
                     const hasInstitution = cert.imgInstitution && !imageErrors[`${cert.id}-institution`];
                     const hasTitle = cert.imgTitle && !imageErrors[`${cert.id}-title`];

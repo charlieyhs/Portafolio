@@ -1,46 +1,50 @@
 import { useTranslation } from "react-i18next";
-import { email, github, linkedin, whatsapp } from "../../assets/images";
 import '../../css/contact.css'
-import { getWhatsAppUrl } from "../../data/personal";
+import { EMAIL, getWhatsAppUrl, GITHUB_CONTACT_URL, LINKEDIN_URL } from "../../data/personal";
+import Icon from "../Icon";
+import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
-    
+
     const {t} = useTranslation();
 
+    const links = [
+        { id: "email", icon: "mail", label: t('contact.email'), value: EMAIL, href: `mailto:${EMAIL}` },
+        { id: "linkedin", icon: "linkedin", label: t('contact.linkedin'), value: "linkedin.com/in/carlosyhs", href: LINKEDIN_URL },
+        { id: "github", icon: "github", label: t('contact.github'), value: "github.com/charlieyhs", href: GITHUB_CONTACT_URL },
+        { id: "whatsapp", icon: "whatsapp", label: t('contact.whatsapp'), value: t('contact.whatsapp-cta'), href: getWhatsAppUrl(t('contact.whatsapp-message')) },
+    ];
+
     return (
-        <section id="contact" className="section section-light contact-section">
-            <h2 className="contact-title">{t('contact.we-talk')}</h2>
-            <p className="contact-subtitle">
-                {t('contact.available')}
-            </p>
+        <section id="contact" className="section contact-section">
+            <div className="section-inner contact-grid">
+                <div className="contact-info">
+                    <div className="section-label">{t('contact.label')}</div>
+                    <h2 className="section-title">{t('contact.we-talk')}</h2>
+                    <p className="contact-subtitle">
+                        {t('contact.available')}
+                    </p>
 
-            <div className="contact-links">
-                <a href="mailto:carlossanchez25fasa@gmail.com" 
-                    className="btn btn-contact">
-                    <img src={email} alt={t('contact.alt-email')}></img>
-                    {t('contact.email')}
-                </a>
+                    <ul className="contact-links">
+                        {links.map((link) => (
+                            <li key={link.id}>
+                                <a href={link.href}
+                                    target={link.id === "email" ? undefined : "_blank"}
+                                    rel="noopener noreferrer"
+                                    className="card contact-link">
+                                    <span className="contact-link-icon"><Icon name={link.icon} size={18} /></span>
+                                    <span className="contact-link-text">
+                                        <span className="mono-label">{link.label}</span>
+                                        <span className="contact-link-value">{link.value}</span>
+                                    </span>
+                                    <Icon name="arrow-up-right" size={16} className="contact-link-arrow" />
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
 
-                <a href="https://www.linkedin.com/in/carlosyhs" 
-                    target="_blank"
-                    className="btn btn-contact">
-                    <img src={linkedin} alt={t('contact.alt-linkedin')}></img>
-                    {t('contact.linkedin')}
-                </a>
-
-                <a href="https://github.com/charlieyhs/Presentacion-Skills/blob/main/README.md" 
-                    target="_blank"
-                    className="btn btn-contact">
-                    <img src={github} alt={t('contact.alt-github')}></img>
-                    {t('contact.github')}
-                </a>
-
-                <a href={getWhatsAppUrl(t('contact.whatsapp-message'))}
-                    target="_blank"
-                    className="btn btn-contact">
-                    <img src={whatsapp} alt={t('contact.alt-whatsapp')}></img>
-                    {t('contact.whatsapp')}
-                </a>
+                <ContactForm />
             </div>
         </section>
     );

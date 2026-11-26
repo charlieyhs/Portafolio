@@ -1,156 +1,113 @@
 .timeline {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 34px;
 }
 
 .timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 100%;
-  background: var(--border);
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--accent-2), transparent);
+    opacity: 0.55;
 }
-
 
 .timeline-item {
-  display: flex;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.timeline-item:nth-child(odd) {
-  flex-direction: row;
-}
-
-.timeline-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.timeline-content {
-  width: calc(60% - 40px);
-  padding: 30px;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-right: auto;
-}
-
-.timeline-item:nth-child(even) .timeline-content {
-  margin-left: auto;
+    position: relative;
 }
 
 .timeline-dot {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 16px;
-  height: 16px;
-  background: var(--green);
-  border-radius: 50%;
-  border: 3px solid var(--bg-page);
-  box-shadow: 0 0 0 4px var(--border);
-  z-index: 2;
+    position: absolute;
+    left: -34px;
+    top: 28px;
+    width: 16px;
+    height: 16px;
+    border: 3px solid var(--bg);
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent), 0 0 16px color-mix(in srgb, var(--accent) 60%, transparent);
 }
 
-.experience-date {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: var(--accent-text);
-  margin-bottom: 12px;
-  font-weight: 600;
+.timeline-item:nth-child(even) .timeline-dot {
+    background: var(--accent-2);
+    box-shadow: 0 0 0 1px var(--accent-2), 0 0 16px color-mix(in srgb, var(--accent-2) 60%, transparent);
+}
+
+.timeline-content {
+    padding: 28px;
 }
 
 .experience-title {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--text);
+    margin-top: 8px;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
 .experience-company {
-  font-size: 15px;
-  color: var(--text-secondary);
-  margin-bottom: 15px;
+    margin-top: 2px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--accent-text);
 }
 
 .experience-description {
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
+    margin-top: 16px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.experience-description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.experience-description li {
+    position: relative;
+    padding-left: 22px;
+}
+
+.experience-description li::before {
+    content: '›';
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: var(--accent-2-text);
+}
+
+.experience-description strong {
+    color: var(--text);
+    font-weight: 600;
 }
 
 .experience-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
 }
 
-body.dark .timeline::before {
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        var(--green),
-        transparent
-    );
-}
+@media (max-width: 600px) {
+    .timeline {
+        padding-left: 28px;
+    }
 
-body.dark .timeline-dot {
-    background: var(--green);
-    border-color: var(--bg-dark);
-    box-shadow: 0 0 0 4px var(--border-dark),
-                0 0 20px rgba(163, 177, 138, 0.4);
-}
-
-@media (max-width: 1024px) {
-    .timeline-content {
-        width: calc(70% - 40px);
-    }
-}
-
-@media (max-width: 768px) {
-    .timeline::before {
-        left: 20px;
-    }
-    
-    .timeline-item {
-        flex-direction: row !important;
-        padding-left: 50px;
-    }
-    
-    .timeline-content {
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 20px;
-    }
-    
     .timeline-dot {
-        left: 20px;
+        left: -28px;
     }
-    
-    .experience-title {
-        font-size: 20px;
-    }
-}
 
-@media (max-width: 480px) {
-    .timeline-item {
-        padding-left: 40px;
-    }
-    
     .timeline-content {
-        padding: 15px;
-    }
-    
-    .experience-tags {
-        gap: 4px;
-    }
-    
-    .badge {
-        font-size: 9px;
-        padding: 3px 8px;
+        padding: 22px;
     }
 }

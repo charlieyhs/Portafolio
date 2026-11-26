@@ -1,17 +1,22 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { logo, whatsapp, whiteLogo } from "../assets/images";
+import { logo, whiteLogo } from "../assets/images";
 import "../css/nav-bar.css";
 import LanguageSelector from "./LanguageSelector";
 import ThemeToggle from "./ThemeToggle";
+import Icon from "./Icon";
 import { useTheme } from "../hooks/useTheme";
+import { useActiveSection } from "../hooks/useActiveSection";
 import { scrollBehavior } from "../utils/scroll";
 import { getWhatsAppUrl } from "../data/personal";
+
+const SECTION_IDS = ["aboutme", "projects", "experience", "skills", "certification", "contact"];
 
 const Navbar = () => {
     const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
     const { theme } = useTheme();
+    const active = useActiveSection(SECTION_IDS);
 
     const menus = [
         { id: "1", label: t("navbar.aboutme"), href: "aboutme" },
@@ -24,7 +29,7 @@ const Navbar = () => {
 
     const handleScroll = (id) => {
         const element = document.getElementById(id);
-        const offset = 50;
+        const offset = 70;
 
         if (element) {
             const y = element.getBoundingClientRect().top + window.pageYOffset - offset;
@@ -35,21 +40,22 @@ const Navbar = () => {
     return (
         <header>
             <nav>
-                <div className="logo">
-                    <button
-                        style={{ background: "transparent", border: "none" }}
-                        onClick={() => {
-                            handleScroll("hero");
-                            setMenuOpen(false);
-                        }}
-                    >
-                        <img
-                            src={theme === "light" ? logo : whiteLogo}
-                            alt={t("navbar.logo-description")}
-                            title={t("navbar.logo-description")}
-                        />
-                    </button>
-                </div>
+                <button
+                    className="logo"
+                    onClick={() => {
+                        handleScroll("hero");
+                        setMenuOpen(false);
+                    }}
+                >
+                    <img
+                        src={theme === "light" ? logo : whiteLogo}
+                        alt={t("navbar.logo-description")}
+                        title={t("navbar.logo-description")}
+                    />
+                    <span className="logo-text" aria-hidden="true">
+                        <span className="logo-code">&lt;/&gt;</span> charlieyhs.dev
+                    </span>
+                </button>
 
                 {/* Botón hamburguesa */}
                 <button
@@ -63,37 +69,40 @@ const Navbar = () => {
                             : t("navbar.open-menu")
                     }
                 >
-                    {menuOpen ? "✕" : "☰"}
+                    <Icon name={menuOpen ? "x" : "menu"} size={20} />
                 </button>
 
                 {/* Menú principal */}
                 <ul id="main-menu" className={`nav-menu ${menuOpen ? "open" : ""}`}>
-                    {menus.map((menu) => (
-                        <li key={menu.id}>
-                            <button
-                                className="nav-item"
-                                onClick={() => {
-                                    handleScroll(menu.href);
-                                    setMenuOpen(false);
-                                }}
-                            >
-                                {menu.label}
-                            </button>
-                        </li>
-                    ))}
-                    <li><LanguageSelector /></li>
-                    <li><ThemeToggle /></li>
-
-                    <li>
+                    <li className="nav-links">
+                        <ul>
+                            {menus.map((menu) => (
+                                <li key={menu.id}>
+                                    <button
+                                        className={`nav-item ${active === menu.href ? "active" : ""}`}
+                                        aria-current={active === menu.href ? "true" : undefined}
+                                        onClick={() => {
+                                            handleScroll(menu.href);
+                                            setMenuOpen(false);
+                                        }}
+                                    >
+                                        {menu.label}
+                                    </button>
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                    <li className="nav-tools">
+                        <LanguageSelector />
+                        <ThemeToggle />
                         <a
                             href={getWhatsAppUrl(t("contact.whatsapp-message"))}
                             target="_blank"
-                            className="button-theme"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary btn-sm nav-cta"
                         >
-                            <img
-                                src={whatsapp}
-                                alt={t("contact.alt-whatsapp")}
-                            />
+                            <Icon name="whatsapp" size={15} />
+                            {t("navbar.talk")}
                         </a>
                     </li>
                 </ul>
